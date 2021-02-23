@@ -1,0 +1,43 @@
+section.first
+  header.header
+    .header__body.container
+      a(href="#!").header__logo
+        img(src="assets/img/home/logo-small.webp",alt="img")
+      .header__info.info
+        .info__language.info-js
+          img(src="assets/img/home/ru-flag.webp",alt="img")
+          span Русский
+          .info__drop.info-drop.info-drop-js
+            .info-drop__item
+              .info__language.info__language--drop 
+                img(src="assets/img/home/ru-flag.webp",alt="img")
+                span Русский
+            .info-drop__item
+              .info__language.info__language--drop 
+                img(src="assets/img/home/ua-flag.webp",alt="img")
+                span Український
+      nav.header__menu.menu
+        i.icon-x.header__close
+        ul.menu__list
+          - 
+            items = [
+              { title: "День рождения" },
+              { title: "Праздники" },
+              { title: "Свадьба" },
+              { title: "Тосты" },
+              { title: "Открытки" },
+              { title: "Музыкальные" },
+            ]
+          each item in items
+            li.menu__item
+              a.menu__link(href="#!")=item.title
+      
+      i.icon-align-justify.header__burger
+
+  section.bunner
+    .bunner__body.container
+      h1.bunner__title Поздравления на все случаи жизни – Мобильные Открытки
+      button.btn.bunner__button(type='button')  
+        span Перейти к поздравлениям
+        .button-helper.button-helper--first
+      .bunner__img

@@ -1,0 +1,83 @@
+// ключевые параметры
+// ширина и высота слайдера задается независимо от разметки
+// .slider__slider 
+//   width: calc(100vw-300px)
+//   min-height: 400px
+
+
+
+
+
+.slider__slider 
+  min-height: 400px
+  // width: 50vw
+  width: 50%
+.slider
+  position: relative
+
+.slider__body,.slider__item
+  +pro
+  min-height: 400px
+  +bg(blue)
+
+.slider__item
+  // border-top-left-radius: 10px
+  // border-bottom-left-radius: 10px
+
+
+.slider__arrows
+  position: relative
+  +absolute( 100%, 30px, 50%,  0%,  null,0,-50%)
+  +alic
+  z-index: 2
+.slider__arrow
+  +center
+  +absolute( 30px, 30px, 0%,  null,  null,null,null)
+  background: rgba(100,150,100,.6)
+  border-radius: 50%
+  font-size: 18px
+  color: $dark-1
+  transition: all 0.2s ease-in-out
+  &:hover
+    cursor: pointer
+    +bg($salat)
+    color: $active
+
+.slider__arrow_prev
+  left: 10px
+.slider__arrow_next
+  right: 10px
+
+
+  
+.slick-dots li:not(.slick-active)
+    display: none
+.slick-active
+    z-index: 2
+    display: inline-flex
+    +absolute( 71px, 38px, null, null, 10px,0,0)
+    bottom:  10px
+
+
+.slick-dots-current
+    font-weight: normal
+    font-size: 15px
+    color: $white
+    margin: 0 0 0 
+.slick-dots-total
+    font-weight: normal
+    color: $white
+    font-size: 15px
+    margin: 0 0 0 
+.slick-dots-separator
+    color: white
+    font-size: 15px
+    font-weight: normal
+    margin: 0 5px
+.slick-dots-button
+    +center 
+    background: transparent
+    width: 71px
+    height: 38px
+    border-radius: 10px
+    background: rgba(24,24,24, .6)
