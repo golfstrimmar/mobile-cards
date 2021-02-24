@@ -12,7 +12,7 @@
   // flex: 0 1 100%
   margin: 0 0 100px 0
   &:not(&:first-of-type)
-    margin: 0 0 42px 0
+    margin: 0 0 80px 0
   // padding: 0 0 0 0
   // position: relative
   // display: none
@@ -148,10 +148,74 @@
   +jucb
   +alic
   position: relative
-  
+  transition: all 0.2s ease-in-out
+  &:hover
+    // cursor: url(/../assets/img/home/click.svg), auto
+    // background-color: #fdffbc
+    cursor: pointer
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    width: 154px
+    height: 154px
+//-------------
+
+
+
+
+//------.search__cards--add--------
+.search__cards--add,.popular__cards--add
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  display: none 
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .search-cards-card__img
   width: 72px
   height: 72px
+  @media (max-width: 767px)
+    width: 64px
+    height: 64px
+
 .search-cards-card__title
   font-size: 16px
   font-weight: normal
@@ -160,6 +224,52 @@
   line-height: 1.5
   min-height: 22%
   margin: 0 0 25px
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    font-size: 14px
+//-------------
+
+//------.search-cards__card --------
+.search-cards__card 
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  border-radius: 3px
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    margin: 0 0 12px 0
+    border-radius: 3px
+    // padding: 0 0 0 0
+//-------------
+
+
+
+
+
+
+  //-------------
 //------.search-cards__card--birthday--------
 .search-cards__card--birthday
   height: auto
@@ -177,15 +287,17 @@
   border-radius: 3px
   box-shadow: 0 0 20px 0 rgba(34, 34, 34, 0.12)
   background-color: $white
-
+  &:hover
+    background-color: #e7d9ea
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
   @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    width: 100%
+    min-height: auto
+    padding: 30px 0	
+    margin: 0 0 20px 0
 //-------------
 //------.search-cards-card__img--birthday--------
 .search-cards-card__img--birthday
@@ -216,6 +328,8 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
+    width:40px
+    height:12px
 .search-cards-card__img--birthday-top
   margin: 0 0 10px 0
 .search-cards-card__img--birthday-bottom
@@ -250,8 +364,9 @@
     // padding: 0 0 0 0
   @media (max-width: 767px)
     // flex: 0 1 100%
-    // margin: 0 0 0 0
+    margin: 0 0 0 0
     // padding: 0 0 0 0
+    display: block
 //-------------
 //------.search-cards-card__title--drop--------
 .search-cards-card__title--drop
@@ -261,7 +376,7 @@
   // +jucs
   // +jucb
   width:100%
-  display: block
+  display: none
   // height:
   // flex: 0 1 100%
   // margin: 0 0 0 0
@@ -282,6 +397,8 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
+    display: block
+    font-size: 14px
 //-------------
 //------.search-cards-card__add--------
 .search-cards-card__add
@@ -293,10 +410,12 @@
   // width:100%
   // height:60px
   // flex: 0 1 100%
-  +center
-  box-shadow: 0px 0px 50px rgba(255, 255, 255,1)
-
-  // padding: 0 0 0 0
+  // +center
+  // box-shadow: 0px 0px 50px rgba(255, 255, 255,1)
+  // box-shadow: 0px -11px 9px 0px rgba(255, 255, 255, 1)
+  box-shadow: 0px -25px 15px -10px #fff
+  // box-shadow: 0px -8px 8px 0px rgba(255,90,75, 1)
+  padding: 9px 0 0 0
   // position: relative
   // display: none
   // display: flex
@@ -305,18 +424,19 @@
   letter-spacing: normal
   text-align: center
   color: #5fcef5
-  +absolute(100%,80px,auto,0,auto,0%,0%)
+  +absolute(100%,60px,auto,0,auto,0%,0%)
   bottom :0
-  &:hover
-    cursor: pointer
-    color: #5fcef5
+  transition: all 0.2s ease-in-out
+  // &:hover
+  //   // cursor: pointer
+  //   color: #5fcef5
 
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
   @media (max-width: 767px)
-    // flex: 0 1 100%
+    display: none
     // margin: 0 0 0 0
     // padding: 0 0 0 0
 //-------------
@@ -512,7 +632,9 @@
     // +background-img("/../assets/img/home/img-3.webp")
     // display: contents 
   // &:nth-child(5)
-    
+  &:hover
+    // cursor: url(/../assets/img/home/click.svg), auto
+    cursor: pointer
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -552,3 +674,77 @@
     // margin: 0 0 0 0
     // padding: 0 0 0 0
 //-------------
+
+//------.search-cards__card--toast--------
+.search-cards__card--toast
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  &:hover
+    
+    background-color: #cfebd2
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.hint--------
+.hint
+  position: relative
+  position: absolute
+  transition: all 0.2s ease-in-out
+  width: 107px
+  height: 38px
+  background-color: #557174
+  border-radius: 5px
+  font-size: 12px
+  font-weight: normal
+  font-style: normal
+  line-height: 1.5
+  letter-spacing: normal
+  color: $white
+  +center
+  opacity: 0
+  
+  &:after
+    content: ""
+    background-color: #557174
+    position: absolute
+    width: 10px
+    height: 10px
+    top: -5px
+    left: 20px
+    z-index: 2
+    transform: translate(0%,0%) rotate(45deg)
+    
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+// cursor: url(/../assets/img/home/click.svg), auto

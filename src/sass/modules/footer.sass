@@ -2,6 +2,9 @@
   box-shadow: 0 -2px 15px 0 rgba(34, 34, 34, 0.12)
   margin: 100px 0 0 0
   padding: 0 0 60px 0	
+  @media (max-width: 767px)
+    padding: 0 0 0 0
+    margin: 100px 0 -20px 0	
   //------.footer__body--------
 .footer__body
   // +bg()
@@ -64,9 +67,16 @@
     // margin: 0 0 0 0
     // padding: 0 0 0 0
   @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    flex: 0 1 100%
+    text-align: center
+    +fdc
+    +alic
+    margin: 0 0 20px 0
+    &:nth-child(1)
+      flex: 0 1 100%
+    &:not(&:first-child)
+      flex: 0 1 40%
+      margin: 0 0 20px 0
 //-------------
 //------.info__language--footer--------
 .info__language--footer
@@ -88,6 +98,9 @@
   // grid-template-rows:
   // grid-template-areas:
   // grid-area:
+  &:hover
+    cursor: 	default
+    color: #222222 
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -104,8 +117,11 @@
   font-stretch: normal
   font-style: normal
   padding: 0 0 10px 0	
-
-
+  &:hover
+    cursor: pointer
+    color: #b84dc4
+  @media (max-width: 767px)
+    font-size: 14px
 
 //------footer__body--------
 .footer__body
@@ -164,6 +180,8 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
+    width: 196px
+    height: 32px
 //-------------
 //--------------
 .footer-item__point
@@ -181,6 +199,10 @@
   font-stretch: normal
   font-style: normal
   padding: 7px 0 0 0
+  transition: all 0.2s ease-in-out
+  &:hover
+    cursor: pointer
+    color: #b84dc4
   &:first-of-type
     padding: 0 0 0 0	
   // position: relative
@@ -196,7 +218,7 @@
     // margin: 0 0 0 0
     // padding: 0 0 0 0
   @media (max-width: 767px)
-    // flex: 0 1 100%
+    font-size: 13px
     // margin: 0 0 0 0
     // padding: 0 0 0 0
 //-------------

@@ -56,6 +56,9 @@ font-stretch: normal;
 .icon-vk:before {
   content: "\f189";
 }
+.icon-rouble:before {
+  content: "\e90f";
+}
 .icon-heart1:before {
   content: "\e902";
 }
@@ -95,9 +98,6 @@ font-stretch: normal;
 .icon-check:before {
   content: "\e90b";
 }
-.icon-arrow-right:before {
-  content: "\e90c";
-}
 .icon-chevron-down:before {
   content: "\e90d";
 }
@@ -105,28 +105,40 @@ font-stretch: normal;
   content: "\e90e";
 }
 .icon-chevron-right:before {
-  content: "\e90f";
-}
-.icon-chevron-up:before {
   content: "\e910";
 }
-.icon-eye:before {
+.icon-chevron-up:before {
   content: "\e912";
 }
-.icon-message-square:before {
+.icon-eye:before {
   content: "\e913";
 }
-.icon-plus:before {
+.icon-message-square:before {
   content: "\e914";
 }
-.icon-home:before {
+.icon-plus:before {
   content: "\e915";
 }
-.icon-share:before {
+.icon-home:before {
   content: "\e916";
 }
-.icon-airplay:before {
+.icon-share:before {
   content: "\e917";
+}
+.icon-airplay:before {
+  content: "\e918";
+}
+.icon-play_arrow:before {
+  content: "\e919";
+}
+.icon-arrow-left:before {
+  content: "\e90c";
+}
+.icon-arrow-right:before {
+  content: "\e91a";
+}
+.icon-dehaze:before {
+  content: "\e91b";
 }
 .icon-phone:before {
   content: "\e942";
@@ -147,5 +159,5 @@ font-stretch: normal;
   content: "\e9d9";
 }
 .icon-email:before {
-  content: "\e918";
+  content: "\e91c";
 }
