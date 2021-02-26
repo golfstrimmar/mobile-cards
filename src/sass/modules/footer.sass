@@ -2,7 +2,7 @@
   box-shadow: 0 -2px 15px 0 rgba(34, 34, 34, 0.12)
   margin: 100px 0 0 0
   padding: 0 0 60px 0	
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     padding: 0 0 0 0
     margin: 100px 0 -20px 0	
   //------.footer__body--------
@@ -29,7 +29,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -62,11 +62,16 @@
   &:nth-child(1)
     flex: 1 1 31%
     
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (min-width: 1001px) and (max-width: 1199px)
+    margin: 0 0 30px 0
+    &:nth-child(1)
+      flex: 0 1 10%
+      margin: 0 0 30px 0
+    &:not(&:first-child)
+      margin: 0 0 30px 0
+
+
+  @media (max-width: 1000px)
     flex: 0 1 100%
     text-align: center
     +fdc
@@ -74,8 +79,9 @@
     margin: 0 0 20px 0
     &:nth-child(1)
       flex: 0 1 100%
+      margin: 0 0 31px 0
     &:not(&:first-child)
-      flex: 0 1 40%
+      flex: 0 1 49.5%
       margin: 0 0 20px 0
 //-------------
 //------.info__language--footer--------
@@ -105,10 +111,15 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
+    font-size: 14px
+    img
+      width: 24px
+      height: 16px
+      margin: 0 10px 0 0
 //-------------
 
 .footer-item__title
@@ -120,8 +131,9 @@
   &:hover
     cursor: pointer
     color: #b84dc4
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     font-size: 14px
+    padding: 0 3px 3px 	
 
 //------footer__body--------
 .footer__body
@@ -147,10 +159,10 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    padding: 26px 0 0 0
 //-------------
 //------footer-item__logo--------
 .footer-item__logo
@@ -176,10 +188,8 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+  @media (max-width: 1200px)
+    margin: 0 0 20px 0
     width: 196px
     height: 32px
 //-------------
@@ -217,10 +227,11 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     font-size: 13px
     // margin: 0 0 0 0
     // padding: 0 0 0 0
+    padding: 4.2% 0 0
 //-------------
 //------.footer-item__point--------
 .footer-item__point--top
@@ -246,8 +257,8 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    padding: 13px 0 0 0
 //-------------

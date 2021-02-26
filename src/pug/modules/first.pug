@@ -3,6 +3,7 @@ section.first
     .header__body.container
       a(href="#!").header__logo
         img(src="assets/img/home/logo-small.svg",alt="img")
+      i.icon-x.header__close
       .header__info.info
         .info__language.info-js
           img(src="assets/img/home/ru-flag.webp",alt="img")
@@ -17,33 +18,31 @@ section.first
                 img(src="assets/img/home/ua-flag.webp",alt="img")
                 span Український
       .header__mask
-      nav.header__menu.menu
-        i.icon-x.header__close
         
-        ul.menu__list
-          - 
-            items = [
-              { title: "День рождения" },
-              { title: "Праздники" },
-              { title: "Свадьба" },
-              { title: "Тосты" },
-              { title: "Открытки" },
-              { title: "Музыкальные" },
-            ]
-          each item in items
-            li.menu__item
-              img(src="assets/img/home/star.svg",alt="img")
-              a.menu__link(href="#!")=item.title
-        .menu__links
-          a(href="#!").menu__link--map Карта сайта
-          a(href="#!").menu__link--contacts Контакты
+      nav.header__menu.menu
+          ul.menu__list
+              - 
+                items = [
+                  { title: "День рождения" },
+                  { title: "Праздники" },
+                  { title: "Свадьба" },
+                  { title: "Тосты" },
+                  { title: "Открытки" },
+                  { title: "Музыкальные" },
+                ]
+              each item in items
+                li.menu__item
+                  img(src="assets/img/home/star.svg",alt="img")
+                  a.menu__link(href="#!")=item.title
+              li.menu__links
+                a(href="#!").menu__link--map Карта сайта
+                a(href="#!").menu__link--contacts Контакты
       i.icon-dehaze.header__burger
 
   section.bunner
     .bunner__body.container
-      .bunner__img
-      h1.bunner__title Поздравления на все случаи жизни – Мобильные Открытки
-      button.btn.bunner__button(type='button')  
-        span Перейти к поздравлениям
-        .button-helper.button-helper--first
-      
+          .bunner__img
+          h1.bunner__title Поздравления на все случаи жизни – Мобильные Открытки
+          button.btn.bunner__button(type='button')  
+            span Перейти к поздравлениям
+            .button-helper.button-helper--first

@@ -26,14 +26,17 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
 //-------------
   
   
-  
+#search
+  margin: 0 0 100px 0
+  @media (max-width: 1000px)
+    margin: 0 0 70px 0
 
 // ========================
 //------.search--------
@@ -60,7 +63,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -69,12 +72,154 @@
   
   
   
+//------.search__slider--------
+.search__slider
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    // flex: 0 1 100%
+    display: block
+    margin: 0px -20px 25px 
+    // padding: 0 0 0 0
+//-------------
   
-  
-  
-  
-  
-  
+//------.slider__item--birthday--------
+.slider__item--birthday
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    
+    display: flex!important
+    +fdc
+    +jucs
+    +alic
+    position: relative
+    border-radius: 3px
+    box-shadow: 0 0 15px 0 rgba(34, 34, 34, 0.1)
+    background-color: $white
+    padding: 30px 0	
+    height: 282px
+    overflow: hidden
+    flex-wrap: nowrap
+//-------------
+//------.slider-item-birthday__add--------
+.slider-item-birthday__add
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    background-color: #fff
+    -webkit-box-shadow: 0 -25px 15px -10px #fff
+    box-shadow: 0 -25px 15px -10px #fff
+    padding: 9px 0 0
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: normal
+    text-align: center
+    color: #5fcef5
+    position: absolute
+    width: 100%
+    height: 60px!important
+    top: auto
+    left: 0
+    right: auto
+    transform: translate(0)
+    bottom: 0
+    transition: all .2s ease-in-out
+//-------------
+
+//------.slider-item-birthday__inner--------
+.slider-item-birthday__inner
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    text-align: center
+    +jucc
+    +alic
+    font-size: 14px
+    // height: auto!important
+    // display: inline-flex
+    &:hover
+      cursor: pointer
+    
+//-------------
   
   //-------------
 .search__cards
@@ -100,9 +245,12 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+
+  
+
+  @media (max-width: 1000px)
     // flex: 0 1 100%
-    // margin: 0 0 0 0
+    margin: 27px 0 0 0
     // padding: 0 0 0 0
 //-------------
 .search-cards
@@ -128,14 +276,46 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+    justify-content: center
+  @media (max-width: 1000px)
+    +jucc
+//-------------
+
+.search-cards__card
+  
+
+
+//------.random-color--------
+.random-color
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  background-color: $white
+  transition: all 0.2s ease-in-out
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
 //-------------
 
-.search-cards__card
-  
+
+
+
+
 .search-cards-card
   width: 170px
   height: 190px
@@ -157,9 +337,16 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+
+
+
+
+  @media (max-width: 1000px)
+    padding: 25px 16px 0px
     width: 154px
-    height: 154px
+    height: auto
+    min-height: 154px
+    min-height: auto
 //-------------
 
 
@@ -189,30 +376,44 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
 //-------------
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+//------.search__cards--add--------
+.search__cards--add
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    display: none
+//-------------
 .search-cards-card__img
   width: 72px
   height: 72px
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     width: 64px
     height: 64px
 
@@ -222,15 +423,70 @@
   font-stretch: normal
   font-style: normal
   line-height: 1.5
-  min-height: 22%
-  margin: 0 0 25px
+  min-height: 98px
+  +alic
+  // margin: 0 0 25px
+  +fdc
+  flex-wrap: nowrap
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    +jucs
+    +alis
+    font-size: 14px
+    min-height: auto
+    margin: 22px 0 
+//-------------
+//------.search-cards-card__title--search--------
+.search-cards-card__title--search
+  min-height: auto
+  margin: 0px 0 25px
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
   @media (max-width: 767px)
-    font-size: 14px
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
 //-------------
+//------carryover--------
+.carryover
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  +center
+  
+  // width:
+  // flex: 0 1 100%
+  margin: 0 0 0 0
+  padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  br:first-of-type
+    display: none
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+
+
+
 
 //------.search-cards__card --------
 .search-cards__card 
@@ -257,13 +513,114 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     margin: 0 0 12px 0
     border-radius: 3px
     // padding: 0 0 0 0
 //-------------
 
+
+.search-cards-card__link
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  +pro
+  +fdc
+  +jucb
+  +alic
+  padding: 0 0 0px 0	
+
+//------.search__cards--birthday--------
+.search__cards--birthday
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    // flex: 0 1 100%
+    margin: 18px 0 0 0
+    // padding: 0 0 0 0
+    display: none
+//-------------
+//------.slider-item-birthday__inner--toasts--------
+.slider-item-birthday__inner--toasts
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    padding: 0 40px
+    text-align: left
+//-------------
+
+//------.search__cards--toasts--------
+.search__cards--toasts
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    display: none
+//-------------
 
 
 
@@ -272,31 +629,33 @@
   //-------------
 //------.search-cards__card--birthday--------
 .search-cards__card--birthday
-  height: auto
-  min-height: 312px
+  // height: auto
+  height: 312px
   width:  31.67%
   overflow: hidden
-  display: table
+  // display: table
   // text-wrap: nowrap
-  // margin: 0 0 0 0
+  margin: 0 0 0 0
   padding: 33px 0
   // position: relative
   // display: none
   // display: flex
-  // display: grid
+  +fdc
+  +jucc
   border-radius: 3px
   box-shadow: 0 0 20px 0 rgba(34, 34, 34, 0.12)
   background-color: $white
+  
   &:hover
     background-color: #e7d9ea
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media  (min-width: 1001px) and (max-width: 1350px)
+    margin: 0 20px 20px
+    flex-grow: 1
+
+  @media (max-width: 1000px)
     width: 100%
     min-height: auto
-    padding: 30px 0	
+    padding: 32px 0	
     margin: 0 0 20px 0
 //-------------
 //------.search-cards-card__img--birthday--------
@@ -324,7 +683,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -356,13 +715,13 @@
   // position: relative
   // display: none
   // display: flex
-  display: table-cell
-  vertical-align: middle
+  // display: table-cell
+  // vertical-align: middle
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -393,7 +752,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -435,7 +794,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     display: none
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -465,10 +824,13 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
-    // margin: 0 0 0 0
+    margin: 0 auto
     // padding: 0 0 0 0
+    width: 208px
+    height: 45px
+    font-size: 14px
 //-------------
 
 //------.home-section__button--birthday--------
@@ -479,7 +841,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -515,7 +877,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -530,6 +892,10 @@
     box-shadow: 0px 10px 25px rgba(247, 116, 36, 0.35)
   &:hover
     cursor: pointer
+  @media (max-width: 1000px)
+    width: 154px
+    height: 45px
+  
 
 //------.button-helper--toasts--------
 .button-helper--toasts
@@ -542,7 +908,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -554,45 +920,122 @@
   height: 60px
   &:after
     box-shadow: 0px 10px 25px rgba(244, 74, 47, 0.33)
+  @media (max-width: 1000px)
+    width: 173px
+    font-size: 14px
+    margin: 20px auto
 .button-helper--popular
   background: linear-gradient(to top, #ff6446, #fb4c3b)
 
 
-
-//------.popular-cards--------
-.popular-cards
-  display: grid
-  grid-gap: 15px
-  grid-template-columns: repeat(2,auto)
-  // grid-template-columns: auto auto  auto auto
-  // grid-template-rows: masonry
-  // grid-template-columns: repeat(4,auto)
-  grid-template-rows: repeat(2,auto)
-  // grid-template-columns: 1fr 1fr 1fr 1fr
-  // grid-template-rows: 1fr 1fr
+//--------------
+.search__cards--search
+  // @media (max-width: 362px)
+  //   +jucc
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
   // grid-template-areas:
   // grid-area:
-  // grid-auto-flow: dense
   @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    display: grid
+    grid-template-columns: repeat(3, auto)
+    grid-template-rows: repeat(2, 1fr)
+    // grid-template-areas:
+    // grid-area:
+    justify-items: center !important
+    grid-gap: 12px
+
+
+
+  @media (max-width: 600px)
+    display: grid
+    grid-template-columns: repeat(2, auto)
+    grid-template-rows: repeat(auto, 1fr)
+    // grid-template-areas:
+    // grid-area:
+    justify-items: center
+    grid-gap: 12px
+
+
+    @media (max-width: 360px)
+      grid-template-columns: repeat(2, minmax(128px,40%))
+    @media (max-width: 320px)
+      grid-template-columns: 1fr
 //-------------
-.popular-cards__long
-  +jucb
-  flex-wrap: nowrap !important
-.popular-cards__high
-  grid-row:  span 2
-  display: flex
+
+
+// ------------------------------------------
+.search-cards__card--search
+  @media (max-width: 1000px)
+    // margin: 0 6px 12px 
+    margin: 0 0 0 0
+    grid-column:  span 1
+  @media (max-width: 360px)
+    width: auto
+    min-width: 128px
+  @media (max-width: 320px)
+    width:  154px
+    // justify-self: center
+//   @media (min-width: 320px) and (max-width: 380px)
+//     margin: 0 6px  12px 
+//     width: 40%
+
+
+//-------------
+//------.popular-cards--------
+// .popular-cards
+  // display: grid
+  // grid-gap: 15px
+  // grid-template-columns: repeat(2,auto)
+  // // grid-template-columns: auto auto  auto auto
+  // // grid-template-rows: masonry
+  // // grid-template-columns: repeat(4,auto)
+  // grid-template-rows: repeat(2,auto)
+  // // grid-template-columns: 1fr 1fr 1fr 1fr
+  // // grid-template-rows: 1fr 1fr
+  // // grid-template-areas:
+  // // grid-area:
+  // // grid-auto-flow: dense
+  // @media (max-width: 1199px)
+  //   // flex: 0 1 100%
+  //   // margin: 0 0 0 0
+  //   // padding: 0 0 0 0
+  // @media (max-width: 1000px)
+  //   grid-gap: 6px
+//-------------
+// .popular-cards__long
+//   +jucb
+//   flex-wrap: nowrap !important
+//   // @media (max-width: 1000px)
+//     // display: block
+
+// .popular-cards__high
+//   grid-row:  span 2
+//   display: flex
+  // @media (max-width: 1000px)
+    // display: block
+  
 //------.popular-cards__card--------
 .popular-cards__card
   // grid-column:  span 1
   // grid-row: span 1
   display: flex
+  display: flex
+  // display: contents
   // +bg()
   // +background-img("/../assets/img/article-1/img-5.webp")
   // +alic
@@ -601,7 +1044,7 @@
   width:  auto
   min-height: 252px
   // flex: 0 1 100%
-  margin: 0 15px 0 0
+  // margin: 0 15px 0 0
   &:last-child
     margin: 0 0 0 0
   // padding: 0 0 0 0
@@ -639,11 +1082,83 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    min-height: auto
+    img
+      min-height: auto
+      display: flex
+      +pro
 //-------------
+
+.popular-cards
+  width: 100%
+  display: grid
+  grid-gap: 15px
+  grid-template-areas: "card1 card2 card3 card4" "card5 card5 card6 card4"  
+  grid-template-columns: auto  auto  auto  minmax(320px, auto)
+  grid-template-rows: repeat(2,1fr)
+
+  @media (max-width: 1000px)
+    grid-gap: 6px
+    grid-template-areas: "card1 card3" "card4  card2 " "card4 card6" "card5 card5"  
+    grid-template-columns: 55% auto
+    grid-template-rows: repeat(auto-fill,auto)
+
+
+
+
+.popular-cards__card--1
+  grid-area: card1
+  // grid-column:  span 1
+  @media (max-width: 1000px)
+    margin: 0 0 34px 0 
+.popular-cards__card--2
+  grid-area: card2
+  // grid-column:  span 1
+  // grid-row: span 3
+.popular-cards__card--3
+  grid-area: card3
+  // grid-column:  span 1
+.popular-cards__card--4
+  grid-area: card4
+  @media (max-width: 1000px)
+    margin: -34px 0 0  0 
+.popular-cards__card--5
+  grid-area: card5
+  margin: 0 155px 0 0
+  @media (max-width: 1000px)
+    margin: 0 0 0 0
+
+.popular-cards__card--6
+  grid-area: card6
+  margin: 0 0 0 -155px!important 
+  @media (max-width: 1000px) 
+    margin: 0 0 0 0!important 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //------popular__cards--------
 .popular__cards
@@ -669,10 +1184,13 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    width: 80%
+    margin: 18px auto 0 
+  @media (max-width: 767px)
+    width: 100%
+    margin: 18px 0 0 
 //-------------
 
 //------.search-cards__card--toast--------
@@ -702,7 +1220,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -725,7 +1243,6 @@
   color: $white
   +center
   opacity: 0
-  
   &:after
     content: ""
     background-color: #557174
@@ -741,7 +1258,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0

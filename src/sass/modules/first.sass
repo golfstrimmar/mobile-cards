@@ -82,7 +82,7 @@
   grid-template-rows:  100%
   grid-template-areas: "logo  info menu "
   
-  @media (max-width: 767px)
+  @media (max-width: 1200px)
     grid-template-columns: 147px  165px 1fr
     padding: 0 20px
 //-------------
@@ -93,7 +93,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     font-size: 20px
     display: inline-block
     color: #181818
@@ -113,7 +113,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1200px)
     img
       height: 24px
 
@@ -139,7 +139,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     margin: 0 0 0 10px
     // padding: 0 0 0 0
@@ -181,7 +181,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     font-size: 12px
 //-------------
 //------.header__menu--------
@@ -189,34 +189,44 @@
   // margin: 0 30px 0 0
   position: relative
   grid-area: menu
-  padding: 0 0 0 18%	
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+  padding: 0 0 0 18%
+  top: 0	
+  +alic
+  +jucb
+  @media (min-width: 1001px) and(max-width: 1199px)
+    padding: 0 0 0 39px
+
+  @media (max-width: 1000px)
+    position: relative
     width: 100vw
-    min-height: 100vh
+    height: 100vh
     position: fixed
-    top: 64px
+    top: 70px
     transform: translateX(-100vw)
-    // transform: translateX(-19%)
+    // transform: translateX(-64px)
     left: 0
-    padding: 88px 20px 0 83px
-    // overflow-y: auto
-    // overflow-x: visible
+    padding:  23px  0 0px 83px
+    box-shadow: inset 12px 4px 12px 0 rgba(34,34,34,.08)
     text-align: left
     +fdc
-    +jucs
-    +alis
+    +jucb
+    +alib
     +bg(white)
     z-index: 1000
     transition: all 0.2s ease-in-out
-      
+    flex-wrap: nowrap
+    // +border(1px, red)
+    // position: relative
+    overflow-y: auto
+    overflow-x: visible
 //-------------
+
+
+
+
+
+
+
 //------.header__mask--------
 .header__mask
   display: none
@@ -224,7 +234,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     background-color: rgba(0, 0, 0, 0.5)
     position: fixed
     width: 100%
@@ -243,21 +253,15 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-    display: block
-    +absolute(auto,auto,-46px,auto,-40px,0%,0%)
+  @media (max-width: 1000px)
+    display: none
+    +absolute(auto,auto,24px,auto,24px,0%,0%)
     color: white
-    // color: red
     font-size: 20px
     z-index: 10000
     &:hover
       cursor: pointer
 //-------------
-
-
 //------.menu__link--contacts--------
 .menu__link--contacts,.menu__link--map
   // +bg()
@@ -278,41 +282,26 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     font-size: 14px
     font-weight: normal
     display: inline-block
 //-------------
 //------.menu__link--------
 .menu__links
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  +absolute(auto,auto,auto,84px,auto,0%,0%)
-  bottom: 93px
+  display: none
+
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    +jucs
+    a
+      height: 20px 
+      &:hover
+        cursor: pointer
+        color: #b84dc4
 //-------------
 //------.menu--------
 .menu
@@ -340,67 +329,36 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-    
 //-------------
 //------.menu--------
 .menu-active
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+  @media (max-width: 1000px)
     transform: translateX(-64px)
 
 //-------------
 //------.menu__list-------
 .menu__list
   +alic
-  // +jucs
   +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  height: 100%
+  flex: 0 1 100%
   @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+  @media (max-width: 1000px)
+    position: relative
+    width: 100%
+    flex-wrap: nowrap
     +fdc
     +alis
-    
+    +jucs
+    padding: 0 0 101px 0	
+    li
+      flex: 0 1 auto
+      &:last-child
+        flex-grow: 1
+        +alie
+
+
+
+
 //-------------
 //------.menu__item--------
 .menu__item
@@ -429,9 +387,10 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     margin: 0 0 13px 0
+    height: auto
     img
       display: block
       margin: 0 8px 0 0
@@ -467,7 +426,7 @@
     // margin: 0 0 0 0
     // padding: 0 0 0 0
     // font-size: 16px
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     font-size: 14px
     
 //-------------
@@ -506,23 +465,22 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     margin: 0 0 40px 0
-    padding: 85px 0 0 0
-//-------------
-//-------------
+    padding: 90px 0 40px
 //------.bunner__body--------
 .bunner__body
   padding: 187px 0px 0 0
   +fdc
   position: relative
-  // @media (max-width: 992px)
-  //   padding: 100px 0px 0 0
-  // @media (max-width: 767px)
-//-------------
 
-//-------------
+  @media (min-width: 1001px) and (max-width: 1350px)
+    padding: 187px 20px 0 
+
+  @media (max-width: 1000px)
+    +alic
+
 //------.bunner__text--------
 .bunner__title
   // +alic
@@ -551,17 +509,13 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     font-size: 28px
     width:100%
     text-align: center
-    margin: 40px 0 43px 0
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    +jucc
+    margin: 28px 0 27px
 //-------------
-
-
-
 //--------------
 .bunner__button
   // +bg()
@@ -604,7 +558,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     width: 230px
     height: 45px
     font-size: 14px
@@ -629,18 +583,21 @@
   // grid-template-areas:
   // grid-area:
   +absolute(46% ,auto,100px,auto,0,0%,0%)
-  @media (max-width: 1199px)
+  @media  (min-width: 1001px) and (max-width: 1350px)
+    right: 20px
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-    width: 100%
-    padding: 0 0 62.8% 0
+    width: 87%
+    padding: 0 0 320px 0
     position: relative
     top: 0
+    max-width: 542px
+    max-height: 390px
+  @media (max-width: 768px)
+    max-width: 87%
+    padding: 0 0 62.8% 0
 //-------------
 //------.info--------
 .info
@@ -688,7 +645,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     img
       width: 18px
       height: 12px
@@ -722,7 +679,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0

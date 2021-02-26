@@ -11,6 +11,9 @@ import './js/common'
 // import './js/start-button'
 // import "./js/jquery.nicescroll.min";
 import "./js/header";
+import "./js/copy";
+import "./js/cursor-bage";
+import "./js/random-color";
 // import './js/modal'
 // import './js/contacts'
 // import "./js/polzunki";

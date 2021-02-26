@@ -3,116 +3,30 @@ import $ from "jquery";
 // ------------------------------------------------
 
 
-
-$(window).on("load", function () {
-  $(".cssload").delay(200).fadeOut("slow");
-});
-
+// разворачивание переполненной карточки
 $(document).ready(function (e) {
   // $(".search-cards-card__title--drop").slideUp(1);
   $(".search-cards-card__add").on("click", function () {
-    $(this).siblings(".search-cards-card__title--drop").slideDown(200);
-    $(this).parent().css("display","block")
+    // $(this).siblings(".search-cards-card__title--drop").slideDown(200);
+      $(this).parent().css({
+        "height"  : "auto"
+      });
     $(this).siblings(".search-cards-card__title").css('display','block');
+    $(this).fadeOut(200);
+  });});  
+
+// разворачивание переполненной карточки на слайдере моилки
+$(document).ready(function (e) {
+
+  $(".slider-item-birthday__add").on("click", function () {
+    $(this).parent().css({
+      height: "auto",
+    });
+    $(this).siblings(".slider__item--birthday").css({"height": "auto"});
     $(this).fadeOut(200);
   });});           				  				
 
 
-  (function () {
-     var hint = document.createElement("div");
-    hint.className = "hint"; // изначально невидимый клаcc
-    document.body.appendChild(hint);
-
-    var path = document.getElementsByClassName("path");
-    var i;
-    for (i = 0; i < path.length; i++) {
-      path[i].addEventListener("click", function (e) {
-        // hint.innerText = this.dataset.description;
-
-        hint.innerText = "Скопировано!";
-
-        hint.style.display = "inline-block";
-
-        /* Условие для координат всплывающего блока. 
-    Через (e.pageX + Любое_Число) можно настраивать положение блока */
-        if (e.pageX + hint.offsetWidth < document.body.offsetWidth) {
-          /* e.pageX == расстояние от мышки до левого края страницы, в пикселях
-      hint.offsetWidth == ширина всплывающей подсказки
-      Если их сумма оказывается больше ширины body - сработает else */
-         hint.style.cssText = `
-            opacity: 1; 
-            `;
-
-hint.style.top = e.pageY + 33 + "px";
-hint.style.left = e.pageX  -12 + "px";
-
- setTimeout(function () {
-
-   hint.style.cssText = `
-            opacity: 0; 
-            `;
- }, 1000);
-        } else {
-          hint.style.top = e.pageY + 10 + "px";
-          hint.style.left = e.pageX - hint.offsetWidth - 10 + "px";
-        }
-        /* 'e' - всего лишь переменная в фукнции... там могло бы быть
-       function (bubu) { bubu.pageX; } */
-      });
-    }
-
-
-    /* Добавляем событие 'клик' на всю страницу и каждый раз запускаем функцию*/
-    // document.addEventListener("click", function (e) {
-    //   /*Если e.target (кликнутый элемент) имеет класс "path" - разворачиваемся*/
-    //   if (e.target.className.match("path")) {
-    //     return;
-    //   }
-    //   /* А если нет - скрываем блок */
-    //   hint.style.display = "none";
-    // });
-  })();
-
-
-// рандомный цвет карточки из списка
-$(".search-cards-card").mouseenter(function () {
-
-  const color = [
-    "#FDFFBC",
-    "#E7D9EA",
-    "#CFEBD2",
-    "#FCD1D1",
-    "#D3E0EA",
-    "#EFF7E1",
-    "#FFEEBB",
-    "#FFDCDC",
-    "#D3E0DC",
-    "#BEE5D3",
-    "#D3E0DC",
-    "#D6B0B1",
-  ];
-
-function randomInteger(min, max) {
-  let rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
-}
-
-var i = randomInteger(0, 11);
-  var hue = color[i];
-  $(this)
-    .css("background", hue)
-    .find(".search-cards-card__add")
-    .css({ background: hue, "box-shadow": "0px -25px 15px -10px"+ hue  });
-
-});
-
-
-$(".search-cards-card").mouseleave(function () {
-  $(this)
-    .css("background", "white")
-    .find(".search-cards-card__add")
-    .css({ "background": "white", "box-shadow": "0px -25px 15px -10px #fff" });
-});
 
 
 
@@ -121,20 +35,99 @@ $(".search-cards-card").mouseleave(function () {
 
 
 
-$(document).ready(function (e) {$(".home-section__button").on("click", function () {
-  $(this).siblings(".search__cards--add")
-    .slideDown(300)
-    .css("display", "flex")
-    .find(".search-cards__card--birthday")
-    .css("margin-bottom", "20px");
-  $(this)
-    .attr("disabled", true)
+
+
+
+// разворачивание дополнительных карточек
+
+$(document).ready(function (e) {
+  $(".home-section__button").on("click", function () {
+    $(this)
+      .siblings(".search__cards--add")
+      .slideDown(300)
+      .css("display", "flex")
+      .find(".search-cards__card--birthday")
+      .css("margin-bottom", "20px");
+    $(this).attr("disabled", true);
     // .css({ background: " rgba(158, 185, 244)" })
     // .find(".button-helper--birthday")
     // .css("background", " rgba(158, 185, 244)");
+  });
 });
 
-});           				  				
+
+
+// .home-button
+
+//  window.addEventListener("load", function (event) {
+//    if (window.innerWidth <= 768) {
+//      class my {
+//        constructor(selector) {
+//          elements = document.querySelectorAll(selector);
+//          this._objs = elements;
+//          return this;
+//        }
+
+//        siblings(selector) {
+//          let elements = [];
+
+//          if (this._objs.length > 0) {
+//            let obj = this._objs[0];
+
+//            obj.parentNode.querySelectorAll(selector).forEach((elem) => {
+//              if (elem !== obj) elements.push(elem);
+//            });
+//          }
+
+//          this._objs_old = this._objs;
+//          this._objs = elements;
+//          return this;
+//        }
+//      }
+
+// let slider = document.querySelector(".search__slider");
+
+//      document
+//        .querySelector(".home-button")
+//        .addEventListener("click", function (event) {
+//          this.siblings(slider).setAttribute("style", "display: none");
+//        });
+//    };
+//  });
+
+$(document).ready(function (e) {
+
+if ($(window).width() <= "1000" ) {
+  $(".home-button").on("click", function () {
+    $(this).siblings(".search__slider").css("display", "none");
+  });
+}
+
+});
+
+
+
+$(window).resize(function () {
+  if ($(window).width() <= "1000") {
+    $(".home-button").on("click", function () {
+      $(this).siblings(".search__slider").css("display", "none");
+    });
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+  // разворачивание дополнительных открыток
+           				  				
 $(document).ready(function (e) {
   
   $(".popular__cards--add").slideUp(1);
@@ -152,4 +145,19 @@ $(document).ready(function (e) {
     // .css("background", " rgba(158, 185, 244)");
 });
 
-});           				  				
+});
+
+
+
+
+// ======================================================
+
+// перенос каого предложения в карточке на новую строку
+
+const div = document.querySelectorAll(".carryover");
+div.forEach(function (enter) {
+var s = enter.textContent;
+s = s.replace(/([A-Я])/g, "<br/>" + "$1").trim();
+return (enter.innerHTML = s);
+});
+
