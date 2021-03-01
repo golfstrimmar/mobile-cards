@@ -1,0 +1,40 @@
+section.first
+  header.header
+    .header__body.container
+      a(href="#!").header__logo
+        img(src="assets/img/home/logo-small.svg",alt="img")
+      i.icon-x.header__close
+      .header__info.info
+        .info__language.info-js
+          img(src="assets/img/home/ru-flag.webp",alt="img")
+          span Русский
+          .info__drop.info-drop.info-drop-js
+            .info-drop__item
+              .info__language.info__language--drop 
+                img(src="assets/img/home/ru-flag.webp",alt="img")
+                span Русский
+            .info-drop__item
+              .info__language.info__language--drop 
+                img(src="assets/img/home/ua-flag.webp",alt="img")
+                span Український
+      .header__mask
+        
+      nav.header__menu.menu
+          ul.menu__list
+              - 
+                items = [
+                  { title: "День рождения" },
+                  { title: "Праздники" },
+                  { title: "Свадьба" },
+                  { title: "Тосты" },
+                  { title: "Открытки" },
+                  { title: "Музыкальные" },
+                ]
+              each item in items
+                li.menu__item
+                  img(src="assets/img/home/star.svg",alt="img")
+                  a.menu__link(href="#!")=item.title
+              li.menu__links
+                a(href="#!").menu__link--map Карта сайта
+                a(href="#!").menu__link--contacts Контакты
+      i.icon-dehaze.header__burger

@@ -1,17 +1,4 @@
 
-дальше нужно присобачить галерею с fancybox и mixitup --- 
-
-
-
-
-
-
-document.designMode = 'on'
-
-
-Anton
-Balsamiq Sans
-Permanent Marker
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 

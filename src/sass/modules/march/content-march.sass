@@ -1,0 +1,176 @@
+.march__title
+  h1 
+    padding: 138px 0 0 0
+    font-size: 48px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.4
+    letter-spacing: normal
+    color: #222222
+  position: relative
+  &:after
+    content: ""
+    width: 80px
+    height: 5px
+    background-color: #efce4a
+    position: absolute
+    left:0
+    bottom :0
+    z-index: 2
+    // top: 100% 
+    // left: 100%
+    // top: 50% 
+    // left: 50%
+    // right: 0%
+    // @include anim(0.2s)
+    // @include rotate(45deg)
+    // transform: translate(-50%,-50%)
+    // transform: translate(-50%,-50%) rotate(45deg)
+
+.march__nav
+  +jucb
+  width:  56.5%
+  margin: 23px  0 0  0
+.march-nav
+
+
+
+.btn--march
+  padding: 6px 18px
+  border-radius: 100px
+  background-color: #f1f2f2
+  color: rgba(239, 34, 53, 0.8)
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 150%
+  letter-spacing: .02rem
+  &:hover
+    cursor: pointer
+    background-color: rgba(239, 34, 53, 0.8)
+    color: $white
+    margin: 0 20px 0 0
+    &:last-child
+    margin: 0 0 0 0
+
+
+
+
+.march__cards
+  column-count: 3
+  column-gap: 30px
+  margin: 40px 0 0 0
+  padding: 20px 0 0 0	
+
+
+.march-cards__card
+    height: auto
+    width: auto
+    break-inside: avoid
+    overflow: hidden
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    border-radius: 3px
+    -webkit-box-shadow: 0 0 20px 0 rgb(34 34 34 / 12%)
+    box-shadow: 0 0 20px 0 rgb(34 34 34 / 12%)
+    background-color: #fff
+    margin: 0 0 30px 0
+    padding: 30px 45px	
+
+
+
+.march-connect__soc
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+.march-connect__text
+  font-family: 'Yanone Kaffeesatz', sans-serif
+  font-size: 28px
+  font-weight: normal
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.4
+  letter-spacing: normal
+  text-align: center
+  color: #222222
+
+
+.march-connect__title h2
+  font-family: 'Yanone Kaffeesatz', sans-serif
+  font-size: 36px
+  font-weight: normal
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.4
+  letter-spacing: normal
+  text-align: center
+  color: #222222
+
+
+// &:last-child
+//   margin: 0 0 0 0
+
+
+.soc__button
+  button
+    +pro
+    padding: 12px 20px
+    border-radius: 100px
+
+.march-connect__button-link
+  button
+    padding: 12px 25px
+    border-radius: 100px
+    background-color: #f1f2f2
+    color: rgba(34, 34, 34, 0.5)
+    margin: 0 auto
+    i
+      margin: 0 0 0 50px
+
+
+  
+.soc__button
+  img
+    margin: 0 10px 0 0
+.soc__button--Facebook
+  button
+    background-color: #1976d2
+.soc__button--Twitter
+  button
+    background-color: #1d9bf0
+.soc__button--Pinterest
+  button
+    background-color: #d32f2f
+.soc__button--Telegram
+  button
+    background-image: linear-gradient(to top, #2aabee, #229ed9)
+.soc__button--vk
+  button
+    background-color: #2787f5
