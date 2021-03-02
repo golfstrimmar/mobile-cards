@@ -1,13 +1,5 @@
 .march__title
-  h1 
-    padding: 138px 0 0 0
-    font-size: 48px
-    font-weight: normal
-    font-stretch: normal
-    font-style: normal
-    line-height: 1.4
-    letter-spacing: normal
-    color: #222222
+  padding: 138px 0 0 0
   position: relative
   &:after
     content: ""
@@ -16,7 +8,7 @@
     background-color: #efce4a
     position: absolute
     left:0
-    bottom :0
+    bottom :-4px
     z-index: 2
     // top: 100% 
     // left: 100%
@@ -28,14 +20,13 @@
     // transform: translate(-50%,-50%)
     // transform: translate(-50%,-50%) rotate(45deg)
 
-.march__nav
-  +jucb
-  width:  56.5%
-  margin: 23px  0 0  0
-.march-nav
 
 
 
+.march-nav__item
+  margin: 0 20px 0 0
+  &:last-child
+      margin: 0 0 0 0
 .btn--march
   padding: 6px 18px
   border-radius: 100px
@@ -43,7 +34,7 @@
   color: rgba(239, 34, 53, 0.8)
   font-style: normal
   font-weight: normal
-  font-size: 16px
+  font-size: 14px
   line-height: 150%
   letter-spacing: .02rem
   &:hover
@@ -57,29 +48,61 @@
 
 
 
+// ------------cardscardscards---------------------
 .march__cards
+  
+  
+  margin: 26px -15px -20px -15px
+  
+
+
+.march-cards
   column-count: 3
-  column-gap: 30px
-  margin: 40px 0 0 0
+  column-gap: 0px
   padding: 20px 0 0 0	
+
+
+
+
+// ------------------card---------------------------
+
+.march-cards__card__body
+  padding: 30px 45px
+  margin: -15px -45px
+  +pro
+  box-shadow: 0 0 20px 0 rgb(34 34 34 / 12%)
+  border-radius: 3px
 
 
 .march-cards__card
     height: auto
-    width: auto
+    // width: auto
+    width: 100%
+
     break-inside: avoid
     overflow: hidden
-    -webkit-box-pack: center
-    -ms-flex-pack: center
+    // overflow-x: visible
     justify-content: center
     border-radius: 3px
-    -webkit-box-shadow: 0 0 20px 0 rgb(34 34 34 / 12%)
-    box-shadow: 0 0 20px 0 rgb(34 34 34 / 12%)
+    // box-shadow: 0 0 20px 0 rgb(34 34 34 / 12%)
     background-color: #fff
-    margin: 0 0 30px 0
-    padding: 30px 45px	
+    margin: 0 0 0px 0
+    padding: 30px 15px	
 
 
+.search-cards-card--march
+  box-shadow: none
+
+.march-cards__content
+  +jucs
+  text-align: left
+  margin: 0 0 0 0
+  padding: 0 0 0 0
+  br:first-of-type
+    display: none
+
+
+// ------------------------------------------------
 
 .march-connect__soc
   // +bg()
@@ -174,3 +197,409 @@
 .soc__button--vk
   button
     background-color: #2787f5
+
+
+.march__connect 
+  margin: 92px 0 -33px 0
+  
+.march-connect
+
+.march-connect__title
+  margin: 0 33.5%
+
+.march-connect__soc
+  margin: 15px auto 22px
+  width: 66%
+
+.march-connect__button-link
+  margin: 20px 0 0 0
+  button 
+    i
+      margin: 0 0 0 80px
+      font-size: 24px
+
+
+.march__body
+  position: relative
+
+.march-connect__soc--aside
+  +fdc
+  margin: 0 0 0 0
+  padding: 0 0 0 0	
+  width: 32px
+  // +absolute(auto,auto,252px,auto,-75px,0%,0%)
+  position: fixed
+  top: 250px
+  right: calc((100vw -1440px)/2 +43px)
+
+
+
+
+
+
+  button
+    padding: 0 0 0 0
+    height: 32px
+    width: 32px
+    img 
+      margin: 0 0 0 0
+      transform: scale(0.6)
+  li
+    margin: 0 0 15px 0
+    &:last-child
+      margin: 0 0 0 0
+
+
+
+
+
+
+
+.march__images
+
+.march-images
+  // +alic
+  +jucc
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  margin: 33px 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+.march-images__image
+  padding: 0 0 340px 0	
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  &:first-child
+    flex: 0 1 45%
+    margin: 0 30px 0 0
+  &:last-child
+    flex: 0 1 36%
+
+
+// navnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnav
+
+.march__nav
+  margin: 23px  0 0  0
+
+//--------------
+.march-nav
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  display: grid
+  grid-template-columns: 27% 1fr 37% 
+  grid-template-rows: fepeat(auto, 1fr)
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+.search__transfer
+  margin: 50px 0 100px 0
+
+
+
+
+
+
+
+
+//------.march__nav--march--------
+.march__nav--march
+  grid-template-columns:  1fr 
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+// //------.march-nav__section--------
+.march-nav__block
+
+  +jucs
+  &:nth-child(1)
+    .btn--march
+      color: rgba(247, 116, 36, 0.8)
+      &:hover
+        cursor: pointer
+        background-color: #f77424
+        color: $white
+  &:nth-child(2)
+  
+  &:nth-child(3)
+    +jucb
+    .btn--march
+      color: rgba(45, 156, 219, 0.8)
+      &:hover
+        cursor: pointer
+        background-color: #2d9cdb
+        color: $white
+    
+//     margin: 0 0 0 0
+  
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+.march-nav__item
+  margin: 0 10px 10px 0
+  
+  button
+    padding: 5px 15px
+
+//------._hidden--------
+._hidden
+    
+  @media (max-width: 1000px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+    opacity: 0
+    visibility: hidden
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.search-transfer__links.search-transfer-links --------
+.search-transfer__links 
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+.search-transfer
+  border-radius: 3px
+  padding: 15px 0px 30px 30px
+
+  background-color: #fbfcfc
+//------.search-transfer-links--------
+.search-transfer-links
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  
+  margin: 24px 0 0 0
+  display: grid
+  grid-template-columns:  52.6% 1fr
+  grid-template-rows: repeat(2, 1fr)
+  // grid-template-areas:
+  // grid-area:
+  display: none
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+.search-transfer__title
+  h2,button
+    display: inline-flex
+  button
+    margin: 0 0 0 30px
+
+
+.search-transfer-links__item
+  grid-column:  span 1fr
+  grid-row: span 1fr
+  margin: 0 0px 15px 0
+  &:last-child
+    margin: 0 0 0 0
+
+//------.search-transfer__button--------
+.search-transfer__button
+  +alic
+  +bg(transparent)
+  font-size: 18px
+  color: rgba(34, 34, 34, 0.5)
+  span
+    position: relative
+    margin: 0 30px 0 0
+
+  i
+    font-size: 24px
+    transition: all 0.2s ease-in-out
+
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.search-transfer-links__link--------
+.search-transfer-links__link
+  // +bg()
+  // +background-img("/../assets/img/article-1/img-5.webp")
+
+  +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  flex: 0 1 50%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  font-size: 20px
+  img
+    margin: 0 10px 0 0
+    width: 14px
+    height: 14px
+  &:hover
+    cursor: pointer
+    color: #ef2235
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.prose-card-js--------
+.prose-card-js
+  opacity: 0
+  position: absolute
+  transform: translate(-1000%)
+  transition: opacity 0.2s ease-in-out
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+.prose-card-js--active
+  opacity:1
+  position: relative
+  transform: translate(0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+// &:last-child
+//     margin: 0 0 0 0
+//  &:first-child
+// &:nth-child(1)
+// &:last-child
+// &:not(:first-child)
+
+// +background-img("/../assets/img/article-1/img-5.webp")

@@ -124,6 +124,21 @@ module.exports = {
       template: "src/pug/pages/march.pug",
       filename: "./march.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/accountant.pug",
+      filename: "./accountant.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/common.pug",
+      filename: "./common.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/new-year.pug",
+      filename: "./new-year.html",
+    }),
     // new HtmlWebpackPlugin({
     //   // hash: false,
     //   template: "src/pug/pages/popup-1.pug",
