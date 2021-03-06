@@ -284,10 +284,13 @@
     // padding: 0 0 0 0
 //-------------
 .march-images__image
-  padding: 0 0 340px 0	
+  // padding: 0 0 340px 0	
+  padding: 0 0 28.3%
   background-repeat: no-repeat
   background-size: cover
+  // background-size: 100%
   background-position: center
+  // min-width: 30%
   &:first-child
     flex: 0 1 45%
     margin: 0 30px 0 0
@@ -331,7 +334,7 @@
 //-------------
 
 .search__transfer
-  margin: 50px 0 100px 0
+  margin: 55px 0 44px 0
 
 
 
@@ -454,7 +457,7 @@
 //-------------
 .search-transfer
   border-radius: 3px
-  padding: 15px 0px 30px 30px
+  padding: 10px 0px 30px 30px
 
   background-color: #fbfcfc
 //------.search-transfer-links--------
@@ -563,9 +566,406 @@
     // padding: 0 0 0 0
 //-------------
 
+
+.home-section__button--friend
+  height: 45px
+  margin: 40px auto
+  +bg(transparent)
+  &:hover
+    cursor: pointer
+    span, i
+      color: #ef2235!important
+  span
+    font-size: 18px
+    color: #ef2235
+  i
+    font-size: 35px
+    color: #ef2235
+    margin: 0 0 3px 3px
+    transition: all 0.2s ease-in-out
+
+  &:focus 
+    span, i
+      color: #ef2235
+
+
+
+.btn--friend
+  color: rgba(239,34,53,.8)!important
+  
+  &:hover
+    +bg(rgba(239,34,53,.8)!important)
+    color: white!important
+
+
+#soc-aside
+  transition: all 0.2s ease-in-out
+
+
+.march-cards__button
+  width: 307px
+
+// ===============================================================================
+
+.names__inner
+
+.names-inner
+
+.names-inner__letter
+  margin: 0 0 27px 0
+
+.names-letter
+
+.names-letter__title
+  h4
+    font-family: 'Yanone Kaffeesatz', sans-serif
+    font-size: 28px
+    line-height: 1.4
+    font-weight: normal
+    color: #ef2235
+    text-transform: uppercase
+
+
+.names-letter__list
+  display: grid
+  grid-template-columns:  repeat(6, 1fr)
+  grid-template-rows:  1fr
+  justify-content: space-between 
+  margin: 9px 0 0 0
+.names-letter__list-item
+  grid-column:  span 1
+  grid-row: span 1
+
+
+.names-colum__item
+  padding: 0 0 5px 0	
+
+
+
+
+
+
+
+
+.names-letter__list--string
+  width: 100%
+  +jucs
+.names-letter__list-item--string
+  width: 100%
+
+.names-column--string
+  +jucs
+  flex-wrap: nowrap
+.names-colum__item--string
+  flex: 0 1 16.6666666%
+
+.search__transfer--names
+  +bg(transparent)
+  padding: 0 0 0 0	
+
+.search-transfer__input
+  position: relative
+  margin: 13px 0 0 0	
+  input
+    width: 650px
+    height: 59px
+    border-radius: 100px
+    background-color: #f1f2f2
+    padding: 0 0 0 57px	
+    color: rgba(34, 34, 34, 0.5)
+
+    &::placeholder
+      font-size: 18px
+      color: rgba(34, 34, 34, 0.5)
+
+  i
+    +absolute(auto,auto,50%,20px,auto,0%,-50%)
+    color: rgba(34, 34, 34, 0.3)
+    font-size: 24px
+
+.names-colum__link
+  font-size: 20px
+  font-weight: normal
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.5
+  letter-spacing: normal
+  color: #222222
+    
+
+
+
+
+
+
+// map=============================
+
+
+.map__inner 
+  margin: 45px 0 0 0
+.map__article 
+  margin: 0 0 31px 0
+.map-article 
+.map-article__title 
+  display: inline-block
+  &:hover
+    cursor: pointer
+  h3
+    font-family: 'Yanone Kaffeesatz', sans-serif
+    font-size: 28px
+    font-weight: normal
+  position: relative
+  i
+    +absolute(auto,auto,50%,auto,-60px,0%,-50%)
+    font-size: 36px
+    transition: all 0.1s ease-in-out
+
+
+
+
+.js-map-title 
+.icon-chevron-down 
+.map-article__drop
+  margin: 16px 0 0 0 
+  display: none
+.js-map-drop 
+.map-article-inner 
+  column-count:2
+  column-gap: 29px
+.transfer
+  // width: 40%
+  break-inside: avoid
+  overflow: hidden
+.map-article-inner__block
+  // width: 40% 
+  break-inside: avoid
+.map-article-inner__section
+  break-inside: avoid
+.map-article-inner-section__title
+  padding: 0 0 20px 0	
+  h3
+    font-family: 'Yanone Kaffeesatz', sans-serif
+    font-size: 24px
+    font-weight: normal
+.map-inner-block 
+.map-inner-block__title
+  margin: 0 0 8px 0
+  a
+    display: inline-block 
+.map-article-inner__item
+  padding: 0 0 0 30px	
+  break-inside: avoid 
+.map-article-inner-item 
+.map-article-inner-item__title
+  padding: 0 0 8px 0	
+  h5
+    font-size: 16px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.5
+    letter-spacing: normal
+    color: rgba(34, 34, 34, 0.7) 
+.map-article-inner-item__propertes 
+  padding: 0 0 0 30px	
+.map-article-inner-item__property 
+  padding: 0 0 8px 0	
+.map-article-inner-item__property-link
+  color: rgba(34, 34, 34, 0.7) 
+
+
+// ==============================================================
+
+.search-transfer__input
+  input
+    &:hover
+      cursor: pointer
+    &:focus
+      cursor: default
+.march__description
+  font-size: 18px
+  font-weight: normal 
+  margin: 33px 0  62px 
+  width: 71%
+.march__section
+  .title-1
+    h2 
+      display: inline-block
+    a 
+      display: inline-block
+      font-size: 24px
+      font-weight: normal
+      color: rgba(34, 34, 34, 0.5)
+      margin: 0 0 0 25px
+
+.march-section 
+.march-section__link 
+.march__cards 
+.march-cards 
+.march-cards__card 
+  border-radius: 3px
+  // box-shadow: 0 0 20px 0 rgba(34, 34, 34, 0.12)
+  background-color: $white
+
+
+.march-section__cards
+  +jucb
+  margin: 35px 0 0 0
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+
+
+.march__section--ukr
+  margin: 92px 0 0 0!important
+
+
+.search__transfer--ukr
+  margin: 22px 0 44px
+
+.march-section-block__title-1
+  margin: 0 0 15px 0
+  h2
+    font-size: 28px
+
+.march-section-block__item
+  margin: 0 0 15px 0
+
+
+
+
+
+
+
+
+
+
+
+//------.march-cards__card--ukr--------
+.march-section-cards__card
+  +alie
+  +juce
+  height:200px
+  padding: 0 60px 50px 0
+  border-radius: 3px
+  box-shadow: 0 0 20px 0 rgba(34, 34, 34, 0.12)
+  background-color: $white
+  margin: 0 0 30px 0
+  width:342px
+  position: relative
+  img 
+    +absolute(auto,auto,50%,20px,auto,0%,-50%)
+  &:nth-child(1),&:nth-child(6n),&:nth-child(6n+1)
+    padding: 0 95px 50px 0
+    width:456px
+    img 
+      left: 40px!important
+  
+.march-section-cards__block
+  position: relative
+  p
+    +absolute(auto,auto,-50px,50%,auto,-50%,0)
+  button 
+    width: 116px
+    height: 48px
+    border-radius: 100px
+    color: white
+    margin: 0 auto
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      width: 74%
+      height: 100%
+      top: 0 
+      left: 50%
+      z-index: 2
+      transform: translate(-50%,0%)
+
+
+
+.march-card__title--ukr
+  font-family: 'Yanone Kaffeesatz'
+  font-size: 28px
+  font-weight: normal
+  text-align: center
+  white-space: nowrap
+
+
+.march-section__inner
+  column-count: 2
+  column-gap: 29px
+
+
+
+.march-section__block
+  break-inside: avoid
+
+
+.march-section-block__item
+  
+  font-size: 20px
+  a
+    display: inline-block
+    &:hover
+      cursor: pointer
+      color:#ef2235
+
+
+
+
+
+._grad-1
+  background-image: linear-gradient(to top, #fc3842, #ef2235)
+  &:after
+    box-shadow: 0 10px 25px 0 rgba(244, 74, 47, 0.2)
+
+._grad-2
+  background-image: linear-gradient(to top, #7c7f2a, #6a6925)
+  &:after
+    box-shadow: 0px 10px 25px rgba(118, 120, 40, 0.2)
+._grad-3
+  background: linear-gradient(295.63deg, #FC3842 15.94%, #FC3842 83.51%)
+  &:after
+    box-shadow: 0px 10px 25px rgba(244, 74, 47, 0.2)
+._grad-4
+  background: linear-gradient(295.63deg, #EBC752 15.94%, #EBBC50 83.51%)
+  &:after
+    box-shadow: 0px 10px 25px rgba(235, 196, 81, 0.2)
+  
+._grad-5
+  background-image: linear-gradient(to top, #a0a0a0, #787878)
+  &:after
+    box-shadow: 0px 10px 25px rgba(118, 118, 118, 0.2)
+  
+._grad-6
+  background-image: linear-gradient(to top, #7c7f2a, #6a6925)
+  &:after
+    box-shadow: 0px 10px 25px rgba(118, 120, 40, 0.2)
+._grad-7
+  background-image: linear-gradient(to top, #873f30, #6c3328)
+  &:after
+    box-shadow: 0px 10px 25px rgba(128, 59, 45, 0.2)
+._grad-8
+  background-image: linear-gradient(to top, #7bacdf, #5f99d7)
+  &:after
+    box-shadow: 0px 10px 25px rgba(115, 167, 221, 0.2)
+._grad-9
+  background-image: linear-gradient(to top, #407093, #365e7d)
+  &:after
+    box-shadow: 0px 10px 25px rgba(61, 107, 141, 0.2)
+
 //------.prose-card-js--------
 .prose-card-js
   opacity: 0
+  position: relative
   position: absolute
   transform: translate(-1000%)
   transition: opacity 0.2s ease-in-out
@@ -584,22 +984,3 @@
   transform: translate(0)
 
 
-
-
-
-
-
-
-
-
-
-
-
-// &:last-child
-//     margin: 0 0 0 0
-//  &:first-child
-// &:nth-child(1)
-// &:last-child
-// &:not(:first-child)
-
-// +background-img("/../assets/img/article-1/img-5.webp")

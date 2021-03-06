@@ -139,6 +139,36 @@ module.exports = {
       template: "src/pug/pages/new-year.pug",
       filename: "./new-year.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/friend.pug",
+      filename: "./friend.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/map.pug",
+      filename: "./map.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/name.pug",
+      filename: "./name.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/names.pug",
+      filename: "./names.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/woman.pug",
+      filename: "./woman.html",
+    }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/ukr.pug",
+      filename: "./ukr.html",
+    }),
     // new HtmlWebpackPlugin({
     //   // hash: false,
     //   template: "src/pug/pages/popup-1.pug",

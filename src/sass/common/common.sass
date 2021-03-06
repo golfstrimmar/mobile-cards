@@ -77,29 +77,42 @@ a
   display: block
 
 
+input
+  padding: 0 0 0 15px
+  transition: all 0.2s ease-in-out
+  +border(1px,transparent)
+  // border-radius: 5px
+  +pro
+  &~span
+    transition: all 0.2s ease-in-out
+  &::placeholder
+    transition: all 0.2s ease-in-out
+  & + i
+    // transform: translate(0,-50%) rotate(0deg)
+    transition: all 0.2s ease-in-out
+  &:focus
+    +bg($fone!important)
+    &::placeholder
+      opacity: 0
+      z-index: -1
+    & + i
+      opacity: 0
+      z-index: -1
+    &~span
+      opacity: 0
+      z-index: -1
 
 
 
 
-
-.scroll-block::-webkit-scrollbar-track
-  border-radius: 4px
-
-.scroll-block::-webkit-scrollbar
-  width: 10px
-
-.scroll-block::-webkit-scrollbar-thumb
-  border-radius: 4px
-  background: #f0f2f5
-
-.scroll-block:hover::-webkit-scrollbar-thumb
-  background: #ececec
+._red
+  color: #ef2235
+._orange
+  color:#f77424
+._bue
+  color: #2d9cdb
 
 
-.border-bg
-  +border(1px, #D7CCC8)
-  +bg(white)
-  border-radius: 5px
 
 
 

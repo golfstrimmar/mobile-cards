@@ -16,6 +16,7 @@ import "./js/cursor-bage";
 import "./js/random-color";
 import "./js/march";
 import "./js/scrolling";
+import "./js/tabs";
 // import './js/modal'
 // import './js/contacts'
 // import "./js/polzunki";

@@ -116,16 +116,6 @@ $(window).resize(function () {
 });
 
 
-
-
-
-
-
-
-
-
-
-
   // разворачивание дополнительных открыток
            				  				
 $(document).ready(function (e) {
@@ -151,13 +141,54 @@ $(document).ready(function (e) {
 
 
 // ======================================================
+$(document).ready(function (e) {
+  // перенос каого предложения в карточке на новую строку
 
-// перенос каого предложения в карточке на новую строку
-
-const div = document.querySelectorAll(".carryover");
-div.forEach(function (enter) {
-var s = enter.textContent;
-s = s.replace(/([A-Я])/g, "<br/>" + "$1").trim();
-return (enter.innerHTML = s);
+  const div = document.querySelectorAll(".carryover");
+  div.forEach(function (enter) {
+    var s = enter.textContent;
+    s = s.replace(/([A-Я])/g, "<br/>" + "$1").trim();
+    return (enter.innerHTML = s);
+  });
 });
 
+
+// ===================================================
+
+
+// $(".home-section").find(".slider__body").append("")
+
+
+
+// $(".search-cards__card--birthday")
+
+
+
+// $(document).ready(function (e) {
+  
+  
+
+
+// $(window).resize(function () {
+//   // if ($(window).width() <= "1000") {
+
+// $(".search-cards-birthday-js").each(function () {
+//   let array = Array.from($(this).find(".search-cards-card"));
+
+//   console.log(array);
+
+//   // $.each(array, function (index) {
+
+//   // });
+// });
+
+// // $(".slider-js-1").find(".slick-track").append(".search-cards-card");
+// // return;
+
+//   // }
+// // });
+
+
+
+// });
+// });

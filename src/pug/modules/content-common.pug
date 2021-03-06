@@ -5,22 +5,7 @@ main#common.search.home-section.march
         .title-1.march__title 
           h1 Привітання з Днем народження для всіх!
         .march__soc.march-connect
-          ul.march-connect__soc.march-connect__soc--aside.soc
-            li.soc__button.soc__button--Facebook
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1' href="#!")
-                img(src="assets/img/march/facebook.svg",alt="img")
-            li.soc__button.soc__button--Twitter
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1' href="#!")
-                img(src="assets/img/march/twitter.svg",alt="img")
-            li.soc__button.soc__button--Pinterest
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1' href="#!")
-                img(src="assets/img/march/pinterest.svg",alt="img")
-            li.soc__button.soc__button--Telegram
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1' href="#!")
-                img(src="assets/img/march/telegram.svg",alt="img")
-            li.soc__button.soc__button--vk
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1' href="#!")
-                img(src="assets/img/march/vk.svg",alt="img")
+          include ./includes/soc-aside
 
         nav.march__nav.march-nav
             ul.march-nav__block
@@ -453,33 +438,4 @@ main#common.search.home-section.march
               span Більше привітань
               .button-helper.button-helper--popular
         
-        section.march__connect.march-connect
-          .march-connect__title
-            h2 Сподобалася стаття? Поділіться їй в соціальних мережах!
-          ul.march-connect__soc.soc
-            li.soc__button.soc__button--Facebook
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1')
-                img(src="assets/img/march/facebook.svg",alt="img")
-                span Facebook
-            li.soc__button.soc__button--Twitter
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1')
-                img(src="assets/img/march/twitter.svg",alt="img")
-                span Twitter
-            li.soc__button.soc__button--Pinterest
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1')
-                img(src="assets/img/march/pinterest.svg",alt="img")
-                span Pinterest
-            li.soc__button.soc__button--Telegram
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1')
-                img(src="assets/img/march/telegram.svg",alt="img")
-                span Telegram
-            li.soc__button.soc__button--vk
-              button.btn.btn--success.btn--success-icon(type='button' tabindex='-1')
-                img(src="assets/img/march/vk.svg",alt="img")
-                span ВКонтакте
-
-          .march-connect__text  або посиланням
-          .march-connect__button-link
-            button.btn.btn--success.btn--cross(type='button' tabindex='-1')
-              span  https://www.mobilecards.com.ua/privitannya-zi-svyatami/
-              i.icon-copy
+        include ./includes/march-connect

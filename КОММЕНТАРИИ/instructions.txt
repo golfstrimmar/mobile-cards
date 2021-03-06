@@ -94,6 +94,14 @@ color: lighten($color_success, 50%)
     background-color: lighten(#0D47A1, $i * 8%)
 
 
+column-count: 2
+column-gap: 29px
+break-inside: auto
+break-inside: avoid
+break-inside: avoid-page
+break-inside: avoid-column
+break-inside: avoid-region
+
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ==FLEX========FLEX========FLEX========FLEX========FLEX========FLEX======
@@ -156,6 +164,15 @@ slick slick slick slick slick slick slick slick
 .slick-slide
   padding: 0 10px
 
+
+
+
+
+
+
+===========================================================================
+grid grid grid grid grid grid grid grid grid grid grid grid 
+===========================================================================
 ----------------------для контейнера--------------------------------------
 grid-template-columns: 1fr 2fr  3fr
 grid-template-columns: min-content 200px max-content
