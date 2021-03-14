@@ -1,6 +1,8 @@
 .march__title
   padding: 138px 0 0 0
   position: relative
+  @media (max-width: 767px)
+    padding: 98px 0 0 0
   &:after
     content: ""
     width: 80px
@@ -10,15 +12,9 @@
     left:0
     bottom :-4px
     z-index: 2
-    // top: 100% 
-    // left: 100%
-    // top: 50% 
-    // left: 50%
-    // right: 0%
-    // @include anim(0.2s)
-    // @include rotate(45deg)
-    // transform: translate(-50%,-50%)
-    // transform: translate(-50%,-50%) rotate(45deg)
+    @media (max-width: 767px)
+      bottom: -9px
+    
 
 
 
@@ -60,9 +56,10 @@
   column-count: 3
   column-gap: 0px
   padding: 20px 0 0 0	
-
-
-
+  @media (min-width: 768px) and (max-width: 1350px)
+    column-gap: 30px
+  @media (max-width: 767px)
+    column-gap: 12px
 
 // ------------------card---------------------------
 
@@ -206,6 +203,10 @@
 
 .march-connect__title
   margin: 0 33.5%
+  @media (max-width: 767px)
+    margin: 0 0 0 0
+    h2
+      font-size: 24px
 
 .march-connect__soc
   margin: 15px auto 22px
@@ -231,12 +232,6 @@
   position: fixed
   top: 250px
   right: calc((100vw -1440px)/2 +43px)
-
-
-
-
-
-
   button
     padding: 0 0 0 0
     height: 32px
@@ -248,8 +243,8 @@
     margin: 0 0 15px 0
     &:last-child
       margin: 0 0 0 0
-
-
+  @media (max-width: 1440px)
+    display: none
 
 
 
@@ -278,7 +273,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 767px)
+
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
@@ -414,18 +409,11 @@
 
 //------._hidden--------
 ._hidden
-    
+
   @media (max-width: 1000px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
     opacity: 0
     visibility: hidden
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
+
 //------.search-transfer__links.search-transfer-links --------
 .search-transfer__links 
   // +bg()
@@ -575,9 +563,14 @@
     cursor: pointer
     span, i
       color: #ef2235!important
+  @media (max-width: 767px)
+    margin: 7px auto
   span
     font-size: 18px
     color: #ef2235
+    @media (max-width: 767px)
+      font-size: 17px
+    //-------------
   i
     font-size: 35px
     color: #ef2235
@@ -673,15 +666,23 @@
     background-color: #f1f2f2
     padding: 0 0 0 57px	
     color: rgba(34, 34, 34, 0.5)
+    @media (max-width: 767px)
+      width: 100%
+      height: 45px
+      
 
     &::placeholder
       font-size: 18px
       color: rgba(34, 34, 34, 0.5)
+      @media (max-width: 767px)
+        font-size: 14px
 
   i
     +absolute(auto,auto,50%,20px,auto,0%,-50%)
     color: rgba(34, 34, 34, 0.3)
     font-size: 24px
+    @media (max-width: 767px)
+      font-size: 16px
 
 .names-colum__link
   font-size: 20px
@@ -692,13 +693,6 @@
   letter-spacing: normal
   color: #222222
     
-
-
-
-
-
-
-// map=============================
 
 
 .map__inner 
@@ -787,16 +781,40 @@
   font-weight: normal 
   margin: 33px 0  62px 
   width: 71%
+  @media (max-width: 767px)
+    font-weight: normal
+    font-size: 14px
+    line-height: 150%
+    width: 100%
+    margin: 30px 0  62px
+//-------------
+
+
 .march__section
   .title-1
     h2 
       display: inline-block
+      @media (max-width: 767px)
+        padding: 0 0 0 0	
     a 
       display: inline-block
       font-size: 24px
       font-weight: normal
       color: rgba(34, 34, 34, 0.5)
       margin: 0 0 0 25px
+      @media (max-width: 767px)
+        font-weight: normal
+        font-size: 16px
+        line-height: 150%
+        margin: 0 0 0 17px
+    @media (max-width: 767px)
+      +jucc
+      +alic
+
+
+
+
+
 
 .march-section 
 .march-section__link 
@@ -814,30 +832,33 @@
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    +jucc
   @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    margin: 6px 0 0 0
 //-------------
 
 
 
 .march__section--ukr
   margin: 92px 0 0 0!important
-
+  @media (max-width: 767px)
+    margin: 51px 0 0 !important
 
 .search__transfer--ukr
   margin: 22px 0 44px
 
 .march-section-block__title-1
   margin: 0 0 15px 0
+  @media (max-width: 767px)
+    display: flex
+    justify-content: flex-start!important
   h2
     font-size: 28px
 
 .march-section-block__item
   margin: 0 0 15px 0
-
+  @media (max-width: 767px)
+    margin: 0 0 13px 0
 
 
 
@@ -862,16 +883,44 @@
   position: relative
   img 
     +absolute(auto,auto,50%,20px,auto,0%,-50%)
+    @media (max-width: 767px)
+      left: auto!important
+      transform: translateY(-105%) scale(.75)
+
   &:nth-child(1),&:nth-child(6n),&:nth-child(6n+1)
     padding: 0 95px 50px 0
     width:456px
     img 
       left: 40px!important
-  
+      @media (max-width: 767px)
+        left: auto!important
+        transform: translateY(-90%) scale(.58)
+        
+    @media (max-width: 1350px)
+      width:415px
+        
+    
+  @media (max-width: 1200px)
+    width: 400px!important
+
+  @media (max-width: 767px)
+    padding: 0 0 0 0!important	
+    +fdc
+    +juce
+    +alic
+    height:183px
+    width:154px!important
+    margin: 0 0 13px 0
+
+
+
+
 .march-section-cards__block
   position: relative
   p
     +absolute(auto,auto,-50px,50%,auto,-50%,0)
+    @media (max-width: 767px)
+      top: -35px
   button 
     width: 116px
     height: 48px
@@ -888,7 +937,13 @@
       left: 50%
       z-index: 2
       transform: translate(-50%,0%)
-
+    @media (max-width: 767px)
+      font-weight: normal
+      font-size: 12px
+      line-height: 150%
+      width: 87px
+      height: 36px
+      margin: 0 0 20px 0
 
 
 .march-card__title--ukr
@@ -897,27 +952,34 @@
   font-weight: normal
   text-align: center
   white-space: nowrap
+  @media (max-width: 767px)
+    font-weight: normal
+    font-size: 16px
+    line-height: 150%
 
 
+//-------------
 .march-section__inner
   column-count: 2
   column-gap: 29px
-
+  @media (max-width: 767px)
+    column-count: 1
 
 
 .march-section__block
   break-inside: avoid
-
+  @media (max-width: 767px)
+    margin: 0 0 26px 0
 
 .march-section-block__item
-  
   font-size: 20px
   a
     display: inline-block
     &:hover
       cursor: pointer
       color:#ef2235
-
+  @media (max-width: 767px)
+    font-size: 14px
 
 
 

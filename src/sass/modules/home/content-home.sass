@@ -69,11 +69,8 @@
     // padding: 0 0 0 0
 //-------------
   
-  
-  
-  
-//------.search__slider--------
-.search__slider
+//------.slider__arrows--home--------
+.slider__arrows--home
   // +bg()
   // +background-img("/../assets/img/article-1/img-5.webp")
   // +alic
@@ -92,17 +89,28 @@
   // grid-template-rows:
   // grid-template-areas:
   // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
   @media (max-width: 1000px)
-    // flex: 0 1 100%
     display: block
-    margin: 0px -20px 25px 
-    // padding: 0 0 0 0
+
 //-------------
   
+//------.search__slider--------
+.search__slider
+  @media (max-width: 1000px)
+    display: block
+    margin: 0px -20px 25px 
+//-------------
+
+  
+
+
+.slide
+  height: 100px
+  +bg( red)
+
+
+
+
 //------.slider__item--birthday--------
 .slider__item--birthday
   // +bg()
@@ -253,24 +261,12 @@
     margin: 27px 0 0 0
     // padding: 0 0 0 0
 //-------------
-.search-cards
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
+.search-cards,.search-cards-hidden
+  display: grid
+  grid-template-columns:  repeat(3, 1fr)
+  grid-template-rows: 1fr
+  grid-gap: 20px
+  justify-content: space-between
   // grid-area:
   @media (max-width: 1199px)
     // flex: 0 1 100%
@@ -278,10 +274,21 @@
     // padding: 0 0 0 0
     justify-content: center
   @media (max-width: 1000px)
-    +jucc
+    grid-template-columns:   1fr
 //-------------
 
-.search-cards__card
+.search-cards-hidden
+  margin: 20px 0 0 0
+
+
+
+
+
+
+.search-cards__card--birthday
+  height: 312px
+  grid-column:  span 1
+  grid-row:  span 1
   
 
 
@@ -292,7 +299,6 @@
   // +alic
   // +jucs
   // +jucb
-  // width:
   // height:
   // flex: 0 1 100%
   // margin: 0 0 0 0
@@ -301,7 +307,7 @@
   // display: none
   // display: flex
   background-color: $white
-  transition: all 0.2s ease-in-out
+  // transition: all 0.2s ease-in-out
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
@@ -316,38 +322,7 @@
 
 
 
-.search-cards-card
-  width: 170px
-  height: 190px
-  border-radius: 3px7
-  box-shadow: 0 0 20px 0 rgba(34, 34, 34, 0.12)
-  background-color: $white
-  text-align: center
-  padding: 20px 16px 0px
-  +fdc
-  +jucb
-  +alic
-  position: relative
-  transition: all 0.2s ease-in-out
-  &:hover
-    // cursor: url(/../assets/img/home/click.svg), auto
-    // background-color: #fdffbc
-    cursor: pointer
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
 
-
-
-
-  @media (max-width: 1000px)
-    padding: 25px 16px 0px
-    width: 154px
-    height: auto
-    min-height: 154px
-    min-height: auto
-//-------------
 
 
 
@@ -410,48 +385,7 @@
   @media (max-width: 1000px)
     display: none
 //-------------
-.search-cards-card__img
-  width: 72px
-  height: 72px
-  @media (max-width: 1000px)
-    width: 64px
-    height: 64px
 
-.search-cards-card__title
-  font-size: 16px
-  font-weight: normal
-  font-stretch: normal
-  font-style: normal
-  line-height: 1.5
-  min-height: 98px
-  +alic
-  // margin: 0 0 25px
-  +fdc
-  flex-wrap: nowrap
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 1000px)
-    +jucs
-    +alis
-    font-size: 14px
-    min-height: auto
-    margin: 22px 0 
-//-------------
-//------.search-cards-card__title--search--------
-.search-cards-card__title--search
-  min-height: auto
-  margin: 0px 0 25px
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
 //------carryover--------
 .carryover
   // +bg()
@@ -487,81 +421,16 @@
 
 
 
-
 //------.search-cards__card --------
 .search-cards__card 
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
   border-radius: 3px
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 1000px)
-    // flex: 0 1 100%
-    margin: 0 0 12px 0
-    border-radius: 3px
-    // padding: 0 0 0 0
-//-------------
 
 
-.search-cards-card__link
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  +pro
-  +fdc
-  +jucb
-  +alic
-  padding: 0 0 0px 0	
 
 //------.search__cards--birthday--------
 .search__cards--birthday
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
   @media (max-width: 1000px)
-    // flex: 0 1 100%
     margin: 18px 0 0 0
-    // padding: 0 0 0 0
-    display: none
 //-------------
 //------.slider-item-birthday__inner--toasts--------
 .slider-item-birthday__inner--toasts
@@ -628,177 +497,14 @@
 
   //-------------
 //------.search-cards__card--birthday--------
-.search-cards__card--birthday
-  // height: auto
-  height: 312px
-  width:  31.67%
-  overflow: hidden
-  // display: table
-  // text-wrap: nowrap
-  margin: 0 0 0 0
-  padding: 33px 0
-  // position: relative
-  // display: none
-  // display: flex
-  +fdc
-  +jucc
-  border-radius: 3px
-  box-shadow: 0 0 20px 0 rgba(34, 34, 34, 0.12)
-  background-color: $white
-  
-  &:hover
-    background-color: #e7d9ea
-  @media  (min-width: 1001px) and (max-width: 1350px)
-    margin: 0 20px 20px
-    flex-grow: 1
 
-  @media (max-width: 1000px)
-    width: 100%
-    min-height: auto
-    padding: 32px 0	
-    margin: 0 0 20px 0
-//-------------
-//------.search-cards-card__img--birthday--------
-.search-cards-card__img--birthday
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  width:40px
-  height:12px
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-    
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 1000px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-    width:40px
-    height:12px
-.search-cards-card__img--birthday-top
-  margin: 0 0 15px 0
-.search-cards-card__img--birthday-bottom
-  margin: 15px 0 0 0
+
+
+
 
 //-------------
-//------.search-cards-card__title--------
-.search-cards-card__title
-  // width: 100%
 
-    // padding: 0 0 0 0
-//-------------
-//------.search-cards-card__title--birthday --------
-.search-cards-card__title--birthday 
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  width: 100% !important
-  // height:
-  // flex: 0 1 100%
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: table-cell
-  // vertical-align: middle
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 1000px)
-    // flex: 0 1 100%
-    margin: 0 0 0 0
-    // padding: 0 0 0 0
-    display: block
-//-------------
-//------.search-cards-card__title--drop--------
-.search-cards-card__title--drop
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  width:100%
-  display: none
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 1000px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-    display: block
-    font-size: 14px
-//-------------
-//------.search-cards-card__add--------
-.search-cards-card__add
-  +bg(white)
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  // width:100%
-  // height:60px
-  // flex: 0 1 100%
-  // +center
-  // box-shadow: 0px 0px 50px rgba(255, 255, 255,1)
-  // box-shadow: 0px -11px 9px 0px rgba(255, 255, 255, 1)
-  box-shadow: 0px -25px 15px -10px #fff
-  // box-shadow: 0px -8px 8px 0px rgba(255,90,75, 1)
-  padding: 9px 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  font-size: 14px
-  font-weight: normal
-  letter-spacing: normal
-  text-align: center
-  color: #5fcef5
-  +absolute(100%,60px,auto,0,auto,0%,0%)
-  bottom :0
-  transition: all 0.2s ease-in-out
-  // &:hover
-  //   // cursor: pointer
-  //   color: #5fcef5
 
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 1000px)
-    display: none
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
 //------.home-section__button--------
 .home-section__button
   width: 261px
@@ -851,37 +557,19 @@
 .button-helper--birthday
   background: linear-gradient(to top, #6f9af5, #4ae5f0)
 
+#birthday 
+  .button-helper--active
+    background: rgba(158, 185, 244) 
+#toasts 
+  .button-helper--active
+    background:  #FFAC2D
+  .search-cards-card__add
+    color: #F77424
+  .slick-active:after
+    background: linear-gradient(90deg, #FF512F 0%, #F09819 100%)  
 
-//------.search-cards-card__text--------
-.search-cards-card__text
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  padding: 0 40px
-  text-align: left
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 1000px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
+
+
 //------.home-section__button--toasts--------
 .home-section__button--toasts
   background: linear-gradient(to top, #ff512f, #f09819)
@@ -901,18 +589,7 @@
 .button-helper--toasts
   background: linear-gradient(to top, #ff5143, #ffac2d)
 
-//------.search-cards-card__add--toast--------
-.search-cards-card__add--toast
-  color: #f77424
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 1000px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
+
 //------.home-section__button--popular--------
 .home-section__button--popular
   background: linear-gradient(295.63deg, #F85032 15.94%, #E73827 83.51%)
@@ -930,51 +607,24 @@
 
 //--------------
 .search__cards--search
-  // @media (max-width: 362px)
-  //   +jucc
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
   @media (max-width: 1199px)
     display: grid
-    grid-template-columns: repeat(3, auto)
-    grid-template-rows: repeat(2, 1fr)
-    // grid-template-areas:
-    // grid-area:
-    justify-items: center !important
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 1fr
     grid-gap: 12px
-
-
 
   @media (max-width: 600px)
     display: grid
-    grid-template-columns: repeat(2, auto)
-    grid-template-rows: repeat(auto, 1fr)
-    // grid-template-areas:
-    // grid-area:
-    justify-items: center
+    grid-template-columns: repeat(2, 1fr)
     grid-gap: 12px
 
 
-    @media (max-width: 360px)
-      grid-template-columns: repeat(2, minmax(128px,40%))
-    @media (max-width: 320px)
-      grid-template-columns: 1fr
+  @media (max-width: 360px)
+    grid-template-columns: repeat(2, minmax(128px,40%))
+    justify-items: center
+      
+  @media (max-width: 320px)
+    grid-template-columns: 1fr
 //-------------
 
 
