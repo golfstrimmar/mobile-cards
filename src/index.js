@@ -9,6 +9,8 @@ import "./js/random-color";
 import "./js/march";
 import "./js/scrolling";
 import "./js/tabs";
+import "./js/select";
+import "./js/filter";
 
 
 

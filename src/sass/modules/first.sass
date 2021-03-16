@@ -99,6 +99,7 @@
     color: #181818
     +absolute(20px,20px,50%,auto,24px,0%,-50%)
     transition: all 0.2s ease-in-out
+    z-index: 1100
     &:hover
       cursor: pointer
 //-------------
@@ -120,70 +121,52 @@
 //-------------
 //------.header__info--------
 .header__info
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
   margin: 0  0 0  25px
   position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
   grid-area: info
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
   @media (max-width: 1000px)
-    // flex: 0 1 100%
     margin: 0 0 0 10px
-    // padding: 0 0 0 0
-//-------------
-//------.info--------
+
 .info
   +alic
   +jucs
-  // +jucb
 
 
 
 //------.info__language --------
 .info__language 
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  padding: 0 0 0 15px
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
+  // padding: 0 0 0 15px
   font-size: 14px
   font-weight: normal
   font-stretch: normal
   font-style: normal
   line-height: 1.5
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
   @media (max-width: 1000px)
     font-size: 12px
 //-------------
+
+.info__language
+  height: 100%
+.info__language
+    .new-select, .block__select, .select
+      width: 163px
+    .new-select
+      padding: 0 15px
+    .new-select__list
+      top:45px
+      background: #FFFFFF
+      box-shadow: 0px 10px 12px rgba(34, 34, 34, 0.1)
+      border-radius: 0px 0px 3px 3px
+      z-index: 1010
+    .new-select__item
+      padding: 10px 15px
+      transition: all 0.2s ease-in-out
+      &:hover
+        background: rgba(45, 156, 219, 0.15)
+
+
+
+
 //------.header__menu--------
 .header__menu
   // margin: 0 30px 0 0
@@ -203,7 +186,6 @@
     position: fixed
     top: 70px
     transform: translateX(-100vw)
-    // transform: translateX(-64px)
     left: 0
     padding:  23px  0 0px 83px
     box-shadow: inset 12px 4px 12px 0 rgba(34,34,34,.08)
@@ -215,8 +197,6 @@
     z-index: 1000
     transition: all 0.2s ease-in-out
     flex-wrap: nowrap
-    // +border(1px, red)
-    // position: relative
     overflow-y: auto
     overflow-x: visible
 //-------------
@@ -567,29 +547,13 @@
 //-------------
 //--------------
 .bunner__img
-  // +bg()
   +background-img("/../assets/img/home/mail-illustration.svg")
-  // +alic
-  // +jucs
-  // +jucb
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
   padding: 0 0 33.5% 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
+  background-position: 50% 
   +absolute(46% ,auto,100px,auto,0,0%,0%)
   @media  (min-width: 1001px) and (max-width: 1350px)
     right: 20px
   @media (max-width: 1000px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
     width: 87%
     padding: 0 0 320px 0
     position: relative

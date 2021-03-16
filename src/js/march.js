@@ -9,15 +9,46 @@ $(document).ready(function (e) {
       drop.slideUp(200);
       $(this).removeClass("act");
       icon.css("transform", "rotate(0deg)");
-      $(this).find("span").html("Показать");
+      $(this).find("span").html("Показати все");
     } else {
       drop.slideDown(200).css("display", "grid");
       $(this).addClass("act");
       icon.css("transform", "rotate(180deg)");
-      $(this).find("span").html("Спрятать");
+      $(this).find("span").html("Приховати");
     }
   });
 });
+
+
+$(document).ready(function (e) {
+  $(".march-nav__button").on("click", function () {
+    let drop = $(this).siblings(".march-nav__block").find("._hidden");
+    let icon = $(this).find("i");
+
+    if ($(this).hasClass("act")) {
+      drop.slideUp(100).addClass("_hidden");
+      $(this).removeClass("act");
+      icon.css("transform", "rotate(0deg)");
+      $(this).find("span").html("Показати все");
+    } else {
+      drop
+        .css({
+          opacity: "1",
+          visibility: "visible",
+        })
+        .slideDown(100);
+      $(this).addClass("act");
+      icon.css("transform", "rotate(180deg)");
+      $(this).find("span").html("Приховати");
+    }
+  });
+});
+
+
+
+
+
+
 
 $(document).ready(function (e) {
   $(".prose-js").on("click", function () {
@@ -73,20 +104,37 @@ let viewPort = window.innerHeight;
     }
   });
 });
-// -----если нет кнопки на странице друзей- делаем отступ--------------------------
+// -----если нет кнопки на странице common- делаем отступ--------------------------
 
 $(document).ready(function (e) {
   $(".march__section").each(function () {
-    let array = Array.from($(this).find(".home-section__button--friend"));
-    if (array.length < 1) {
+  let array = Array.from($(this).find(".home-section__button--friend"));
+  if (array.length < 1) {
+    if (window.innerWidth > 1000) {
       $(this).css("margin", "0 0 106px 0");
     } else {
-      $(this).css("margin", "0");
+      $(this).css("margin", "0 0 70px 0");
+    }
+    } else {
+      $(this).css("margin", "0 0 70px 0");
     }
   });
 });
 
-
+$(window).resize(function () {
+  $(".march__section").each(function () {
+    let array = Array.from($(this).find(".home-section__button--friend"));
+    if (array.length < 1) {
+      if (window.innerWidth > 1000) {
+        $(this).css("margin", "0 0 106px 0");
+      } else {
+        $(this).css("margin", "0 0 70px 0");
+      }
+    } else {
+      $(this).css("margin", "0 0 70px ");
+    }
+  });
+});
 
 // регулирует количество имен в колонке--------------------------
 $(document).ready(function (e) {

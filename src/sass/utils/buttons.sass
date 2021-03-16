@@ -81,15 +81,19 @@
     margin: 0 14px 0 0
     font-size: 20px
   span
-      margin: 0 0 0 0
-  // &:hover
-  //   i, span
-  //     color: lighten($active,10%)
-      
+    margin: 0 0 0 0
+    @media (max-width: 767px)
+      display: none
+
   &:focus
     i, span
       color: white
-  
+
+
+
+
+
+
 .btn--empty 
   +bg(white)
   +border(1px,#757575)

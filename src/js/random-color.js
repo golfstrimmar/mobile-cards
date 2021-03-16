@@ -2,6 +2,9 @@ import $ from "jquery";
 
 
 $(document).ready(function (e) {
+
+
+
 $(".random-color").mouseenter(function () {
   const color = [
     "#FDFFBC",
@@ -30,9 +33,9 @@ $(".random-color").mouseenter(function () {
     .find(".search-cards-card__add")
     .css({ background: hue, "box-shadow": "0px -25px 15px -10px" + hue });
 
-  $(this)
-    .find(".slider-item-birthday__add")
-    .css({ background: hue, "box-shadow": "0px -25px 15px -10px" + hue });
+  // $(this)
+  //   .find(".search-cards-card__add")
+  //   .css({ background: hue, "box-shadow": "0px -25px 15px -10px" + hue });
 });
 
 $(".random-color").mouseleave(function () {
@@ -41,9 +44,9 @@ $(".random-color").mouseleave(function () {
     .find(".search-cards-card__add")
     .css({ background: "white", "box-shadow": "0px -25px 15px -10px #fff" });
 
-$(this)
-  .find(".slider-item-birthday__add")
-  .css({ background: "white", "box-shadow": "0px -25px 15px -10px #fff" });
+// $(this)
+//   .find(".slider-item-birthday__add")
+//   .css({ background: "white", "box-shadow": "0px -25px 15px -10px #fff" });
 
 });
 

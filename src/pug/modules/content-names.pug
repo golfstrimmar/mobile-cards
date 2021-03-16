@@ -1,6 +1,7 @@
 include ../utils/mixins
 
-main#common.search.home-section.march.names
+
+main#names.search.home-section.march.names
     .container
       .march__body
         .title-1.march__title 
@@ -27,17 +28,14 @@ main#common.search.home-section.march.names
               li.march-nav__item
                 button.btn.btn--march.btn--friend(type='button')  Марии
 
-  
-
-                
         .search__transfer.search__transfer--names.search-transfer
-          .search-transfer__title.title-1 
+          .names__title
             h2  Знайти іменинника
           .search-transfer__input
-            input(type="text" placeholder="Пошук серед 216 імен")
+            input(  id="demoInput" type="text" placeholder="Пошук серед 216 імен" )
             i.icon-search
 
-        sectiom.names__inner.names-inner       
+        sectiom.names__inner.names-inner#demoList
           article.names-inner__letter.names-letter
             .names-letter__title
               h4  a
@@ -1375,6 +1373,6 @@ main#common.search.home-section.march.names
 
 
         
-        include ./includes/march-connect
+        //- include ./includes/march-connect
 
 

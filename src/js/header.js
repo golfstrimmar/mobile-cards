@@ -122,16 +122,18 @@ $(document).ready(function (e) {
   $(".info-drop-js").slideUp(1);
   $(".info-js").on("click", function () {
  if($(this).hasClass("act")){
- $(this).removeClass("act").find(".info-drop-js").slideUp(200);
+ $(this).removeClass("act").siblings(".info-drop-js").slideUp(200);
  }else{
- $(this).addClass("act").find(".info-drop-js").slideDown(200);
+ $(this).addClass("act").siblings(".info-drop-js").slideDown(200);
  }
 
 });});           				  				
 
 
 
-
+$(document).ready(function (e) {$(".info-img-js").on("click", function () {
+  $(".info-drop-js").slideUp(200);
+});});           				  				
 
 
 

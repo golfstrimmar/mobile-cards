@@ -6,19 +6,11 @@ section.first
       i.icon-x.header__close
       .header__info.info
         .info__language.info-js
-          img(src="assets/img/home/ru-flag.webp",alt="img")
-          span Русский
-          .info__drop.info-drop.info-drop-js
-            .info-drop__item
-              .info__language.info__language--drop 
-                img(src="assets/img/home/ru-flag.webp",alt="img")
-                span Русский
-            .info-drop__item
-              .info__language.info__language--drop 
-                img(src="assets/img/home/ua-flag.webp",alt="img")
-                span Український
+          .block__select
+            select.select
+              option(value='assets/img/home/ru-flag.webp' selected) Русский 
+              option(value='assets/img/home/ua-flag.webp' ) Український
       .header__mask
-        
       nav.header__menu.menu
           ul.menu__list
               - 

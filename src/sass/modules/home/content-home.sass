@@ -36,7 +36,7 @@
 #search
   margin: 0 0 100px 0
   @media (max-width: 1000px)
-    margin: 0 0 70px 0
+    margin: 0 0 80px 0
 
 // ========================
 //------.search--------
@@ -98,7 +98,7 @@
 .search__slider
   @media (max-width: 1000px)
     display: block
-    margin: 0px -20px 25px 
+    margin: 0px 0px 25px 
 //-------------
 
   
@@ -147,6 +147,31 @@
     overflow: hidden
     flex-wrap: nowrap
 //-------------
+
+
+
+//--------------
+.search-cards__big
+  +jucs
+
+._hidden-card
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  z-index: -1
+  padding: 0 0 0 0	!important
+  transition: all 0.2s ease-in-out
+
+._hidden-card--active
+  opacity: 1
+  visibility: visible
+  position: relative
+  z-index: 1
+  height: 312px
+  padding: 33px 0 !important
+
+
+
 //------.slider-item-birthday__add--------
 .slider-item-birthday__add
   // +bg()
@@ -265,14 +290,14 @@
   display: grid
   grid-template-columns:  repeat(3, 1fr)
   grid-template-rows: 1fr
-  grid-gap: 20px
+  grid-gap: 34px
   justify-content: space-between
   // grid-area:
   @media (max-width: 1199px)
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-    justify-content: center
+    // justify-content: center
   @media (max-width: 1000px)
     grid-template-columns:   1fr
 //-------------
@@ -393,6 +418,7 @@
   // +alic
   // +jucs
   +center
+  justify-content: center  !important
   text-align: center  !important
   // width:
   // flex: 0 1 100%
@@ -511,7 +537,7 @@
   height: 59px
   border-radius: 100px
   background: linear-gradient(to top, #5b86e5, #36d1dc)
-  margin: 40px auto 40px
+  margin: 20px auto 40px
   position: relative
   font-size: 18px
   font-weight: normal
@@ -532,7 +558,7 @@
     // padding: 0 0 0 0
   @media (max-width: 1000px)
     // flex: 0 1 100%
-    margin: 0 auto
+    margin: 20px auto 0
     // padding: 0 0 0 0
     width: 208px
     height: 45px
@@ -570,6 +596,16 @@
 
 
 
+#birthday
+  .title-1 h2
+    padding: 0 40px	
+
+
+
+
+
+
+
 //------.home-section__button--toasts--------
 .home-section__button--toasts
   background: linear-gradient(to top, #ff512f, #f09819)
@@ -595,6 +631,7 @@
   background: linear-gradient(295.63deg, #F85032 15.94%, #E73827 83.51%)
   width: 216px
   height: 60px
+  margin: 40px auto 40px
   &:after
     box-shadow: 0px 10px 25px rgba(244, 74, 47, 0.33)
   @media (max-width: 1000px)
@@ -607,44 +644,101 @@
 
 //--------------
 .search__cards--search
+  grid-template-columns:  repeat(6, 1fr)
+  grid-template-rows: 1fr
+
   @media (max-width: 1199px)
-    display: grid
-    grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: 1fr
+    grid-template-columns: repeat(3, auto)
     grid-gap: 12px
-
+    justify-content: center
   @media (max-width: 600px)
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    grid-gap: 12px
+    grid-template-columns: repeat(2, auto)
 
-
-  @media (max-width: 360px)
-    grid-template-columns: repeat(2, minmax(128px,40%))
-    justify-items: center
+  @media (min-width: 320px)and (max-width: 360px)
+    grid-template-columns: repeat(2,1fr)
       
-  @media (max-width: 320px)
+  @media (max-width: 318px)
     grid-template-columns: 1fr
 //-------------
 
-
 // ------------------------------------------
 .search-cards__card--search
-  @media (max-width: 1000px)
-    // margin: 0 6px 12px 
-    margin: 0 0 0 0
-    grid-column:  span 1
-  @media (max-width: 360px)
-    width: auto
-    min-width: 128px
-  @media (max-width: 320px)
+  width:  170px
+  min-height: 190px
+  margin: 0 0 0 0
+  grid-column:  span 1
+  
+  @media (max-width: 1350px)
     width:  154px
-    // justify-self: center
-//   @media (min-width: 320px) and (max-width: 380px)
-//     margin: 0 6px  12px 
-//     width: 40%
+
+  @media (min-width: 320px)and (max-width: 361px)
+    width: 154px
+    min-height: 154px
+
+  @media (max-width: 318px)
+    width:  154px
+
+.search-cards-card__img--search
+  +absolute(72px,72px,20px,50%,auto,-50%,0%)
+  width: 72px
+  height: 72px
+  @media (max-width: 1000px)
+    width: 64px
+    height: 64px
 
 
+.search-cards-card__link--search
+  padding: 25px 16px 22px
+  @media (max-width: 767px)
+
+
+
+.search-cards-card__title--search
+  margin: 84px 0 0px
+  +center
+  height: 50px
+  margin: 90px 0 0 0
+  @media (max-width: 767px)
+    font-size: 14px
+    height: auto
+    margin: 83px 0 0 0
+
+
+
+
+.search-cards__card--birthday
+  height: 312px
+  // width:  31.67%
+  overflow: hidden
+  margin: 0 0 0 0
+  padding: 33px 0!important
+  +fdc
+  // +jucc
+  border-radius: 3px
+  box-shadow: 0 0 20px 0 rgba(34, 34, 34, 0.12)
+  background-color: $white
+  &:hover
+    background-color: #e7d9ea
+  @media  (min-width: 1001px) and (max-width: 1350px)
+
+  @media (max-width: 1000px)
+    width: 100%
+    min-height: auto
+    padding: 32px 0!important
+
+
+
+
+
+
+
+
+
+
+
+
+
+// padding: 25px 16px 25px
 //-------------
 //------.popular-cards--------
 // .popular-cards
@@ -834,7 +928,7 @@
     // flex: 0 1 100%
     // margin: 0 0 0 0
     // padding: 0 0 0 0
-  @media (max-width: 1000px)
+  @media (min-width: 768px) and (max-width: 1000px)
     // flex: 0 1 100%
     width: 80%
     margin: 18px auto 0 

@@ -1,0 +1,31 @@
+.select 
+  +pro
+  +alic
+  +pro
+  +bg(transparent)
+  position: relative
+.new-select
+  +bg(transparent)
+  +pro
+  &.on
+  &:hover
+    cursor: pointer
+.new-select__list
+  +absolute(100%,auto,15px,0px,auto,0%,0%)
+  z-index: 2
+.new-select__item
+  transition: all 0.2s ease-in-out
+  &:hover
+    cursor: pointer
+.block__select
+  position: relative
+  width: 200px
+.block__icon
+  font-size: 15px
+  +absolute(15px,15px,50%,auto,5px,0%,-50%)
+  transition: all 0.2s ease-in-out
+  z-index:-1
+  &:hover
+    cursor: pointer
+.img-active
+  transform: translateY(-50%) rotate(180deg)

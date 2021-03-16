@@ -1,5 +1,5 @@
 .march__title
-  padding: 138px 0 0 0
+  padding: 136px 0 0 0
   position: relative
   @media (max-width: 767px)
     padding: 98px 0 0 0
@@ -13,9 +13,19 @@
     bottom :-4px
     z-index: 2
     @media (max-width: 767px)
-      bottom: -9px
+      bottom: -12px
     
-
+.names__title
+  h2
+    font-family: 'Yanone Kaffeesatz'
+    font-style: normal
+    font-weight: normal
+    font-size: 36px
+    line-height: 140%
+    color: #222222
+    @media (max-width: 767px)
+      font-size: 24px
+      text-align: center
 
 
 
@@ -24,7 +34,7 @@
   &:last-child
       margin: 0 0 0 0
 .btn--march
-  padding: 6px 18px
+  padding: 6px 14px
   border-radius: 100px
   background-color: #f1f2f2
   color: rgba(239, 34, 53, 0.8)
@@ -33,6 +43,10 @@
   font-size: 14px
   line-height: 150%
   letter-spacing: .02rem
+  @media (max-width: 767px)
+    font-size: 12px
+
+  //-------------
   &:hover
     cursor: pointer
     background-color: rgba(239, 34, 53, 0.8)
@@ -58,8 +72,12 @@
   padding: 20px 0 0 0	
   @media (min-width: 768px) and (max-width: 1350px)
     column-gap: 30px
+  @media (min-width: 768px) and(max-width: 1200px)
+    column-count: 2
   @media (max-width: 767px)
     column-gap: 12px
+    margin: 10px -15px -10px
+    column-count: 1
 
 // ------------------card---------------------------
 
@@ -99,36 +117,6 @@
     display: none
 
 
-// ------------------------------------------------
-
-.march-connect__soc
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
 
 .march-connect__text
   font-family: 'Yanone Kaffeesatz', sans-serif
@@ -140,7 +128,9 @@
   letter-spacing: normal
   text-align: center
   color: #222222
-
+  @media (max-width: 767px)
+    font-size: 20px
+  
 
 .march-connect__title h2
   font-family: 'Yanone Kaffeesatz', sans-serif
@@ -173,7 +163,25 @@
     margin: 0 auto
     i
       margin: 0 0 0 50px
+      @media (max-width: 767px)
+        margin: 0 0 0 0
+        position: absolute
+        top: 50%
+        right :12px 
+        transform: translateY(-50%)
+        font-size: 20px
+        color: #EF2235
 
+    @media (max-width: 767px)
+      width: 100%
+      height: 42px
+      padding: 12px 40px  12px  25px
+    span
+      @media (max-width: 767px)
+        font-size: 12px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
 
   
 .soc__button
@@ -198,19 +206,20 @@
 
 .march__connect 
   margin: 92px 0 -33px 0
-  
+  @media (max-width: 767px)
+    margin: 37px 0 -33px 0
+
 .march-connect
 
 .march-connect__title
   margin: 0 33.5%
+  @media (max-width: 1199px)
+    margin: 0 31px
   @media (max-width: 767px)
-    margin: 0 0 0 0
     h2
       font-size: 24px
 
-.march-connect__soc
-  margin: 15px auto 22px
-  width: 66%
+
 
 .march-connect__button-link
   margin: 20px 0 0 0
@@ -225,10 +234,9 @@
 
 .march-connect__soc--aside
   +fdc
-  margin: 0 0 0 0
+  margin: 0 0 0 0!important
   padding: 0 0 0 0	
-  width: 32px
-  // +absolute(auto,auto,252px,auto,-75px,0%,0%)
+  width: 32px!important
   position: fixed
   top: 250px
   right: calc((100vw -1440px)/2 +43px)
@@ -243,7 +251,7 @@
     margin: 0 0 15px 0
     &:last-child
       margin: 0 0 0 0
-  @media (max-width: 1440px)
+  @media (max-width: 1435px)
     display: none
 
 
@@ -253,126 +261,56 @@
 .march__images
 
 .march-images
-  // +alic
   +jucc
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
   margin: 33px 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    margin: 17px 0 0 0
 
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
 //-------------
 .march-images__image
-  // padding: 0 0 340px 0	
   padding: 0 0 28.3%
   background-repeat: no-repeat
   background-size: cover
-  // background-size: 100%
   background-position: center
-  // min-width: 30%
   &:first-child
     flex: 0 1 45%
     margin: 0 30px 0 0
+    @media (max-width: 767px)
+      flex: 0 1 100%
+      margin: 0 0 0 0
+      padding: 0 0 62.3%
   &:last-child
     flex: 0 1 36%
-
+    @media (max-width: 767px)
+      display: none
 
 // navnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnav
 
 .march__nav
-  margin: 23px  0 0  0
+  margin: 23px  -6px  0
+  @media (max-width: 767px)
+    margin: 27px  0 0  
 
 //--------------
 .march-nav
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
   display: grid
   grid-template-columns: 27% 1fr 37% 
-  grid-template-rows: fepeat(auto, 1fr)
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
+  grid-template-rows: 1fr
+  @media (max-width: 1000px)
+    grid-template-columns:  1fr 
 
 .search__transfer
-  margin: 55px 0 44px 0
+  margin: 55px 0 7p1x 0
+  @media (max-width: 1000px)
+    margin: 38px 0 44px
 
 
 
-
-
-
-
-
-//------.march__nav--march--------
-.march__nav--march
-  grid-template-columns:  1fr 
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
-// //------.march-nav__section--------
 .march-nav__block
-
+  @media (max-width: 1000px)
+    grid-column:  span 1
   +jucs
-  &:nth-child(1)
-    .btn--march
+  .btn--march_first  
       color: rgba(247, 116, 36, 0.8)
       &:hover
         cursor: pointer
@@ -388,31 +326,29 @@
         cursor: pointer
         background-color: #2d9cdb
         color: $white
-    
-//     margin: 0 0 0 0
-  
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
+    @media (max-width: 1000px)
+      +jucs
 
 .march-nav__item
-  margin: 0 10px 10px 0
-  
+  margin: 0 5px 6px 
+  @media (max-width: 767px)
+    margin: 0 7px 10px 0
   button
-    padding: 5px 15px
+    padding: 5px 17px
+    @media (max-width: 767px)
+      height: 28px
+      padding: 5px 12px
+
 
 //------._hidden--------
 ._hidden
-
+  opacity: 1
+  visibility: visible
   @media (max-width: 1000px)
     opacity: 0
     visibility: hidden
+    display: none
+    transition: all 0.1s ease-in-out
 
 //------.search-transfer__links.search-transfer-links --------
 .search-transfer__links 
@@ -446,43 +382,51 @@
 .search-transfer
   border-radius: 3px
   padding: 10px 0px 30px 30px
-
   background-color: #fbfcfc
+  margin: 58px 0 102px 0
+  @media (max-width: 767px)
+    padding: 10px 0px 30px 0px
+  h2
+    @media (max-width: 767px)
+      padding: 0 0 0 0	
+
+
 //------.search-transfer-links--------
 .search-transfer-links
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-  // flex: 0 1 100%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  
   margin: 24px 0 0 0
   display: grid
-  grid-template-columns:  52.6% 1fr
-  grid-template-rows: repeat(2, 1fr)
-  // grid-template-areas:
-  // grid-area:
+  grid-template-columns:  1fr 1fr
+  // grid-template-rows: repeat(2, 1fr)
+  grid-column-gap: 30px
   display: none
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
+    
+  @media (max-width: 1000px)
+    grid-template-columns:  1fr
+    margin: 14px 0 0 0
+    padding: 0 14px	
+
+
+
 //-------------
 .search-transfer__title
   h2,button
     display: inline-flex
   button
     margin: 0 0 0 30px
+    @media (max-width: 767px)
+      font-size: 12px
+      margin: 0 0 0 0!important
+  h2
+    @media (max-width: 767px)
+      font-size: 20px!important
+      padding: 0 0 0 0!important
+      font-size: 19px!important
+      line-height: 140%!important
+  @media (max-width: 767px)
+    +jucb
+    +alic
+    flex-wrap: nowrap
+    padding: 0 0	0 14px
 
 
 .search-transfer-links__item
@@ -495,47 +439,29 @@
 //------.search-transfer__button--------
 .search-transfer__button
   +alic
+  +jucb
   +bg(transparent)
   font-size: 18px
   color: rgba(34, 34, 34, 0.5)
+  min-width: 166px
+  @media (max-width: 767px)
+    min-width: 95px
   span
     position: relative
     margin: 0 30px 0 0
-
+    @media (max-width: 767px)
+      margin: 0 0 0 0
   i
     font-size: 24px
     transition: all 0.2s ease-in-out
+    @media (max-width: 767px)
+      font-size: 16px
 
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
+
 //------.search-transfer-links__link--------
 .search-transfer-links__link
-  // +bg()
-  // +background-img("/../assets/img/article-1/img-5.webp")
-
   +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
   flex: 0 1 50%
-  // margin: 0 0 0 0
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
   font-size: 20px
   img
     margin: 0 10px 0 0
@@ -549,10 +475,10 @@
     // margin: 0 0 0 0
     // padding: 0 0 0 0
   @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
+    font-size: 14px
+    +alis
+    flex-wrap: nowrap
+
 
 
 .home-section__button--friend
@@ -570,6 +496,7 @@
     color: #ef2235
     @media (max-width: 767px)
       font-size: 17px
+      display: block
     //-------------
   i
     font-size: 35px
@@ -595,6 +522,7 @@
   transition: all 0.2s ease-in-out
 
 
+
 .march-cards__button
   width: 307px
 
@@ -617,6 +545,8 @@
     font-weight: normal
     color: #ef2235
     text-transform: uppercase
+    @media (max-width: 767px)
+      font-size: 20px
 
 
 .names-letter__list
@@ -625,6 +555,10 @@
   grid-template-rows:  1fr
   justify-content: space-between 
   margin: 9px 0 0 0
+  @media (max-width: 767px)
+    grid-template-columns:  repeat(3, 1fr)
+    grid-column-gap: 40px
+
 .names-letter__list-item
   grid-column:  span 1
   grid-row: span 1
@@ -658,7 +592,9 @@
 
 .search-transfer__input
   position: relative
-  margin: 13px 0 0 0	
+  margin: 13px 0 0 0
+  @media (max-width: 767px)
+    margin: 7px 0 0 0
   input
     width: 650px
     height: 59px
@@ -669,6 +605,8 @@
     @media (max-width: 767px)
       width: 100%
       height: 45px
+      margin: 0 0 0
+      padding: 0 0 0 45px
       
 
     &::placeholder
@@ -676,6 +614,7 @@
       color: rgba(34, 34, 34, 0.5)
       @media (max-width: 767px)
         font-size: 14px
+        letter-spacing: 1px
 
   i
     +absolute(auto,auto,50%,20px,auto,0%,-50%)
@@ -692,11 +631,15 @@
   line-height: 1.5
   letter-spacing: normal
   color: #222222
-    
+  @media (max-width: 767px)
+    font-size: 14px
+
 
 
 .map__inner 
   margin: 45px 0 0 0
+  @media (max-width: 767px)
+    margin: 33px 0 0 0
 .map__article 
   margin: 0 0 31px 0
 .map-article 
@@ -708,6 +651,8 @@
     font-family: 'Yanone Kaffeesatz', sans-serif
     font-size: 28px
     font-weight: normal
+    @media (max-width: 767px)
+      font-size: 18px
   position: relative
   i
     +absolute(auto,auto,50%,auto,-60px,0%,-50%)
@@ -724,8 +669,12 @@
   display: none
 .js-map-drop 
 .map-article-inner 
-  column-count:2
+  column-count: 2
   column-gap: 29px
+  @media (max-width: 1200px)
+    column-count: 1
+    column-gap: 0px
+
 .transfer
   // width: 40%
   break-inside: avoid
@@ -733,6 +682,8 @@
 .map-article-inner__block
   // width: 40% 
   break-inside: avoid
+  @media (max-width: 767px)
+    margin: -3px 0 0 0
 .map-article-inner__section
   break-inside: avoid
 .map-article-inner-section__title
@@ -744,11 +695,15 @@
 .map-inner-block 
 .map-inner-block__title
   margin: 0 0 8px 0
+  @media (max-width: 767px)
+    font-size: 12px
   a
     display: inline-block 
 .map-article-inner__item
   padding: 0 0 0 30px	
   break-inside: avoid 
+  @media (max-width: 767px)
+    padding: 0 0 0 15px	
 .map-article-inner-item 
 .map-article-inner-item__title
   padding: 0 0 8px 0	
@@ -760,10 +715,16 @@
     line-height: 1.5
     letter-spacing: normal
     color: rgba(34, 34, 34, 0.7) 
+    @media (max-width: 767px)
+      font-size: 12px
 .map-article-inner-item__propertes 
-  padding: 0 0 0 30px	
+  padding: 0 0 0 30px
+  @media (max-width: 767px)
+    padding: 0 0 0 15px		
 .map-article-inner-item__property 
-  padding: 0 0 8px 0	
+  padding: 0 0 8px 0
+  @media (max-width: 767px)
+    font-size: 12px	
 .map-article-inner-item__property-link
   color: rgba(34, 34, 34, 0.7) 
 
@@ -791,6 +752,7 @@
 
 
 .march__section
+  
   .title-1
     h2 
       display: inline-block
@@ -810,6 +772,12 @@
     @media (max-width: 767px)
       +jucc
       +alic
+
+.march__section
+  .home-section__button
+    // margin: 30px auto  !important
+    @media (max-width: 1000px)
+      margin: 30px auto  !important
 
 
 
@@ -1046,3 +1014,71 @@
   transform: translate(0)
 
 
+.soc__button
+  .btn--success-icon
+    img
+      @media (max-width: 1000px)
+        width: 14px
+        height: 14px
+        max-width: 14px
+        margin: 0 0 0 0
+    span
+      @media (max-width: 1000px)
+        display: none
+
+    @media (max-width: 1000px)
+      width: 40px
+      height: 40px
+      border-radius: 50%
+
+
+.march-connect__soc
+  +jucb
+  margin: 15px auto 22px
+  width: 66%
+  @media (max-width: 1200px)
+    width: 100%
+    padding: 0 31px
+    width: 100%
+  @media (max-width: 340px)
+    padding: 0 0 0 0	
+
+
+
+
+.march-nav__button
+  display: none
+  @media (max-width: 1000px)
+    display: block
+    margin: 7px 0 0 0
+    +jucc
+    +alic	
+    justify-self: center
+    grid-column:  span 1
+    +bg(white)
+    span
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 150%
+      text-align: center
+      color: rgba(34, 34, 34, 0.5)
+      position: relative
+      margin: 0 10px 0 0
+    i
+      font-size: 24px
+      color: rgba(34, 34, 34, 0.5)
+      transition: all 0.2s ease-in-out
+
+.march__nav--march
+  grid-template-columns: 1fr!important
+
+.search__transfer--names 
+  @media (max-width: 767px)
+    margin: 33px 0 -5px!important
+
+
+.map-article__title i 
+  @media (max-width: 767px)
+    right: -37px
+    font-size: 30px

@@ -1,64 +1,23 @@
 //-- этот import нужно подключать в каждый файл, чтобы jquery работала
-import $ from "jquery";
+import $, { each } from "jquery";
 // ------------------------------------------------
 
 // разворачивание переполненной карточки
-$(document).ready(function (e) {
-  // $(".search-cards-card__title--drop").slideUp(1);
-  $(".search-cards-card__add").on("click", function () {
-    // $(this).siblings(".search-cards-card__title--drop").slideDown(200);
-    $(this).parent().css({
-      height: "auto",
-    });
-    $(this).siblings(".search-cards-card__title").css("display", "block");
-    $(this).fadeOut(200);
-  });
-});
+
 
 // разворачивание переполненной карточки на слайдере моилки
-$(document).ready(function (e) {
-  $(".slider-item-birthday__add").on("click", function () {
-    // $(this).parent().css({
-    //   height: "auto!important",
-    // });
-    $(this)
-      .closest(".slider__item--birthday")
-      .css({ height: "auto!important" });
-    $(this).fadeOut(200);
-  });
-});
+// $(document).ready(function (e) {
+//   $(".slider-item-birthday__add").on("click", function () {
+//     $(this)
+//       .closest(".slider__item--birthday")
+//       .css({ height: "auto!important" });
+//     $(this).fadeOut(200);
+//   });
+// });
 
 // разворачивание дополнительных карточек
 
-$(document).ready(function (e) {
-  window.state = 0;
-  $("._hidden-card").slideUp(1);
-  
-  $(".but-js-1").on("click", function () {
-    $(this).siblings(".slider").find("._hidden-card").slideDown(300);
-    $(this).attr("disabled", true);
-    $(this).find(".button-helper").addClass("button-helper--active");
-    $(".search__slider").addClass("search__slider--active");
-    window.state = 1;
-    $(".slider-js-1")
-      .slick("unslick")
-      .data({ "init-slider": 0 })
-      .removeClass("slider-js-1");
-  });
 
-  $(".but-js-2").on("click", function () {
-    $(this).siblings(".slider").find("._hidden-card").slideDown(300);
-    $(this).attr("disabled", true);
-    $(this).find(".button-helper").addClass("button-helper--active");
-    $(".search__slider").addClass("search__slider--active");
-    window.state = 2;
-    $(".slider-js-2")
-      .slick("unslick")
-      .data({ "init-slider": 0 })
-      .removeClass("slider-js-2");
-  });
-
-});
 
 
 //////////////////////////////////////////////////
@@ -161,6 +120,74 @@ $(document).ready(function (e) {
     return (enter.innerHTML = s);
   });
 });
+
+
+// =============================================
+
+$(document).ready(function (e) {
+$(".search-cards__card").each(function () {
+var card = $(this).height();
+var title = $(this).find(".search-cards-card__title").height();
+
+
+
+  if (title > card) {
+    $("<div>", {
+      class: "search-cards-card__add",
+      text: "Продолжение",
+    }).appendTo($(this));
+    $(this).addClass("search-cards__big");
+
+  
+
+    $(".but-js-1").on("click", function () {
+      $(this)
+        .siblings(".slider")
+        .find("._hidden-card").addClass("_hidden-card--active")
+      $(this).attr("disabled", true);
+      $(this).find(".button-helper").addClass("button-helper--active");
+    });
+  }
+
+
+  
+   $(".search-cards-card__add").on("click", function () {
+     $(this).parent().css({
+       height: "auto",
+     });
+     $(this).siblings(".search-cards-card__title").css("display", "block");
+     $(this).css("display", "none");
+   });
+
+});
+});
+
+
+
+
+
+
+//   $(".but-js-2").on("click", function () {
+//     $(this).siblings(".slider").find("._hidden-card").slideDown(300);
+//     $(this).attr("disabled", true);
+//     $(this).find(".button-helper").addClass("button-helper--active");
+//     $(".search__slider").addClass("search__slider--active");
+//     window.state = 2;
+//     $(".slider-js-2")
+//       .slick("unslick")
+//       .data({ "init-slider": 0 })
+//       .removeClass("slider-js-2");
+//   });
+// });
+ 
+
+
+
+
+
+
+
+
 
 // ===================================================
 
