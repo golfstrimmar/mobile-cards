@@ -14,14 +14,11 @@ import "./js/filter";
 
 
 
+ // import "./js/slick.js";
+ // import "./js/mySlick.js";
+ // import './css/slick.css';
 
-
-import "./js/slick.js"; 
-import "./js/mySlick.js";
-import './css/slick.css';
-
-
-import './css/fonts.css'
+import "./css/fonts.css";
 
 
 

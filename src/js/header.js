@@ -131,9 +131,9 @@ $(document).ready(function (e) {
 
 
 
-$(document).ready(function (e) {$(".info-img-js").on("click", function () {
-  $(".info-drop-js").slideUp(200);
-});});           				  				
+// $(document).ready(function (e) {$(".info-img-js").on("click", function () {
+//   $(".info-drop-js").slideUp(200);
+// });});           				  				
 
 
 

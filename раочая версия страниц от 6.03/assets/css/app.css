@@ -3443,6 +3443,7 @@ input:focus ~ span {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    justify-items: center;
   }
   .search__cards--search {
     display: grid;

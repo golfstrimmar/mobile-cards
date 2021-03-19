@@ -148,6 +148,28 @@
 .info__language
   height: 100%
 .info__language
+    .block__select
+      position: relative
+      &:after
+        content: ""
+        background-color: transparent
+        position: absolute
+        width: 80%
+        height: 100%
+        top: 0 
+        right: 0
+        z-index: 2
+        // top: 100% 
+        // left: 100%
+        // top: 50% 
+        // left: 50%
+        // right: 0%
+        // @include anim(0.2s)
+        // @include rotate(45deg)
+        // transform: translate(-50%,-50%)
+        // transform: translate(-50%,-50%) rotate(45deg)
+    
+
     .new-select, .block__select, .select
       width: 163px
     .new-select
